@@ -871,6 +871,17 @@ function showResults() {
   submitData(key, r.badge, pts);
 }
 
+function detailedAnswers() {
+  return Q.map((q, i) => ({
+    n:         i + 1,
+    nivell:    q.lv,
+    pregunta:  q.tx.replace(/<[^>]+>/g, '').trim(),
+    resposta:  q.op[answers[i]],
+    correcta:  q.op[q.ok],
+    encertada: answers[i] === q.ok
+  }));
+}
+
 async function submitData(levelKeyVal, levelLabel, pts) {
   try {
     await fetch(`${SUPABASE_URL}/rest/v1/leads`, {
@@ -889,7 +900,7 @@ async function submitData(levelKeyVal, levelLabel, pts) {
         score:     pts,
         total:     Q.length,
         page_url:  window.location.href,
-        answers:   answers
+        answers:   detailedAnswers()
       })
     });
   } catch (e) { /* silent — result shown regardless */ }
