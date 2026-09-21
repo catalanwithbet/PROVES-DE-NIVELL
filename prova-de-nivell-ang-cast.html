@@ -737,10 +737,10 @@ const R = {
     pips:5
   },
   c2: {
-    badge:'C2 — Mestria',
-    title:'El teu nivell ja supera els meus cursos — però parlem!',
-    desc:'Tens un domini de l\'espanyol quasi-nadiu: pots expressar-te amb fluïdesa, precisió i espontaneïtat en qualsevol context. Les meves classes arriben fins al C1, però si vols perfeccionar aspectes molt específics d\'estil, registre avançat o matisos culturals, podem parlar per trobar la millor opció per a tu.',
-    next:'Escriu-me directament i valorem junts com podem treure el màxim del teu espanyol. Potser no necessites classes regulars, però sí sessions puntuals molt específiques.',
+    badge:'C2 — Mastery',
+    title:'Your level already goes beyond my courses — let\'s talk!',
+    desc:'You have near-native command of Spanish: you can express yourself fluently, precisely and spontaneously in any context. My classes go up to C1, but if you\'d like to refine very specific aspects of style, advanced register or cultural nuance, we can talk and find the best option for you.',
+    next:'Message me directly and let\'s figure out together how to get the most out of your Spanish. You might not need regular classes, but rather occasional, very targeted sessions.',
     pips:6
   }
 };
@@ -861,8 +861,8 @@ function showResults() {
   // CTA — C2 gets a different message since teaching stops at C1
   const ctaBtn = document.getElementById('r-cta');
   if (key === 'c2') {
-    ctaBtn.textContent = 'Contacta directament amb Bet →';
-    ctaBtn.href = `mailto:bet@catalanwithbet.com?subject=Consulta%20nivell%20C2%20espanyol&body=Hola%20Bet%2C%20acabo%20de%20fer%20la%20prova%20de%20nivell%20d%27espanyol%20i%20he%20obtingut%20C2.%20M%27agradaria%20parlar%20amb%20tu%20sobre%20les%20opcions%20disponibles.%20El%20meu%20nom%20és%20${encodeURIComponent(name)}.`;
+    ctaBtn.textContent = 'Contact Bet directly →';
+    ctaBtn.href = `mailto:bet@catalanwithbet.com?subject=C2%20Spanish%20level%20inquiry&body=Hi%20Bet%2C%20I%20just%20took%20the%20Spanish%20level%20test%20and%20got%20C2.%20I%27d%20like%20to%20talk%20about%20the%20options%20available.%20My%20name%20is%20${encodeURIComponent(name)}.`;
   } else {
     ctaBtn.textContent = 'Book my first class with Bet →';
     ctaBtn.href = `${CALENDLY}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(mail)}&a1=${encodeURIComponent(r.badge)}`;
