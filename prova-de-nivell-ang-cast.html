@@ -539,7 +539,7 @@
 // ═══════════════════════════════════════════
 const SUPABASE_URL = 'https://nergtufwnayhocadylub.supabase.co'; // → Project Settings → API
 const SUPABASE_KEY = 'sb_publishable_jJhQrE7vm10_2X_4XJHgnw_-VtLExnI'; // → publishable key (safe to expose client-side)
-const CALENDLY     = 'https://calendly.com/learnwithbet/videollamada-gratuita-de-15-minutos-clone';  // → "Clase de 60 minutos" (60 min, tot i el nom de la URL)
+const PAYMENT_URL  = 'https://www.catalanwithbet.com/classes/#tarifes';  // → pàgina de pagament; el pas de Calendly ara ve DESPRÉS del pagament (configurat a la pròpia pàgina de pagament)
 
 // ═══════════════════════════════════════════
 // QUESTIONS (25 total)
@@ -862,8 +862,8 @@ function showResults() {
     ctaBtn.textContent = 'Contact Bet directly →';
     ctaBtn.href = `mailto:bet@catalanwithbet.com?subject=C2%20Spanish%20level%20inquiry&body=Hi%20Bet%2C%20I%20just%20took%20the%20Spanish%20level%20test%20and%20got%20C2.%20I%27d%20like%20to%20talk%20about%20the%20options%20available.%20My%20name%20is%20${encodeURIComponent(name)}.`;
   } else {
-    ctaBtn.textContent = 'Book my first class with Bet →';
-    ctaBtn.href = `${CALENDLY}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(mail)}&a1=${encodeURIComponent(r.badge)}`;
+    ctaBtn.textContent = 'Pay & book my first class →';
+    ctaBtn.href = PAYMENT_URL;
   }
 
   show('s-results');
