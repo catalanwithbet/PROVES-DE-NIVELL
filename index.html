@@ -539,7 +539,7 @@
 // ═══════════════════════════════════════════
 const SUPABASE_URL = 'https://nergtufwnayhocadylub.supabase.co'; // → Project Settings → API
 const SUPABASE_KEY = 'sb_publishable_jJhQrE7vm10_2X_4XJHgnw_-VtLExnI'; // → publishable key (safe to expose client-side)
-const CALENDLY     = 'https://calendly.com/learnwithbet/clase-de-60-minutos-clone-1';  // → "60 minutes class" (60 min, EN, específic per a català)
+const PAYMENT_URL  = 'https://www.catalanwithbet.com/classes/#tarifes';  // → pàgina de pagament; el pas de Calendly ara ve DESPRÉS del pagament (configurat a la pròpia pàgina de pagament)
 
 // ═══════════════════════════════════════════
 // QUESTIONS (25 total)
@@ -862,8 +862,8 @@ function showResults() {
     ctaBtn.textContent = 'Contacta directament amb Bet →';
     ctaBtn.href = `mailto:bet@catalanwithbet.com?subject=Consulta%20nivell%20C2&body=Hola%20Bet%2C%20acabo%20de%20fer%20la%20prova%20de%20nivell%20i%20he%20obtingut%20C2.%20M%27agradaria%20parlar%20amb%20tu%20sobre%20les%20opcions%20disponibles.%20El%20meu%20nom%20és%20${encodeURIComponent(name)}.`;
   } else {
-    ctaBtn.textContent = 'Book my first class with Bet →';
-    ctaBtn.href = `${CALENDLY}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(mail)}&a1=${encodeURIComponent(r.badge)}`;
+    ctaBtn.textContent = 'Pay & book my first class →';
+    ctaBtn.href = PAYMENT_URL;
   }
 
   show('s-results');
