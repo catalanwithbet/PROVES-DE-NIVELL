@@ -15,29 +15,30 @@
     ──────────────────────────────────────────
     Connexions ja configurades:
     - Supabase (URL + publishable key) → taula "leads" del projecte CATALANWITHBET.
-    - Calendly → 60 minutes class (learnwithbet/clase-de-60-minutos-clone-1).
+    - Botó "Book my first class" → pàgina de packs de classes (catalanwithbet.com/classes/#tarifes).
     ══════════════════════════════════════════
     */
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --gold:     #C9A228;
-      --gold-d:   #A88818;
-      --gold-lt:  rgba(201,162,40,0.12);
-      --olive:    #5E8A40;
-      --olive-d:  #4A7030;
-      --red-p:    #C45E62;
-      --red-p-lt: rgba(196,94,98,0.1);
-      --blue-p:   #4A8FAA;
-      --blue-p-lt:rgba(74,143,170,0.1);
-      --bg:       #F2F5EB;
-      --beige:    #F3E9D6;
+      /* Brand palette (from catalanwithbet.com) */
+      --gold:     #8B6BC9;  /* medium purple — accent */
+      --gold-d:   #6F56A1;
+      --gold-lt:  rgba(139,107,201,0.12);
+      --olive:    #6B7A3A;  /* olive green — action buttons */
+      --olive-d:  #556231;
+      --red-p:    #631E6E;  /* dark plum — reused for secondary emphasis */
+      --red-p-lt: rgba(99,30,110,0.1);
+      --blue-p:   #8B6BC9;  /* reuse accent purple — no blue in brand palette */
+      --blue-p-lt:rgba(139,107,201,0.1);
+      --bg:       #F2EBDA;  /* cream — results section */
+      --beige:    #B9A8DD;  /* light lavender — page background */
       --card:     #FFFFFF;
-      --input:    #EBF0E2;
-      --muted:    #6A7060;
-      --border:   rgba(0,0,0,0.09);
-      --text:     #1E2414;
+      --input:    #EFE7FA;
+      --muted:    #7A6F8C;
+      --border:   rgba(99,30,110,0.12);
+      --text:     #631E6E;  /* dark plum — main text & navbar */
     }
 
     html { scroll-behavior: smooth; }
@@ -57,7 +58,7 @@
 
     /* ── TOP BAR ─────────────────────── */
     .topbar {
-      background: #1E2414;
+      background: var(--text);
       padding: 15px 24px;
       display: flex;
       align-items: center;
@@ -74,7 +75,7 @@
       color: #FFFFFF;
       letter-spacing: -0.01em;
     }
-    .topbar-brand span { color: var(--gold); }
+    .topbar-brand span { color: var(--olive); font-style: italic; }
 
     /* ── INTRO ───────────────────────── */
     .intro-hero {
@@ -84,8 +85,8 @@
     }
     .intro-badge {
       display: inline-block;
-      background: var(--blue-p-lt);
-      color: var(--blue-p);
+      background: rgba(107,122,58,0.12);
+      color: var(--olive);
       font-size: 11px;
       font-weight: 600;
       letter-spacing: 0.12em;
@@ -93,7 +94,7 @@
       padding: 5px 14px;
       border-radius: 20px;
       margin-bottom: 20px;
-      border: 1px solid rgba(122,174,204,0.3);
+      border: 1px solid rgba(107,122,58,0.35);
     }
     .intro-title {
       font-family: 'Space Grotesk', sans-serif;
@@ -103,10 +104,10 @@
       color: var(--text);
       margin-bottom: 14px;
     }
-    .intro-title em { font-style: normal; color: var(--gold); }
+    .intro-title em { font-style: normal; color: var(--olive); }
     .intro-desc {
       font-size: 15px;
-      color: var(--muted);
+      color: var(--text);
       font-weight: 300;
       line-height: 1.72;
       max-width: 380px;
@@ -123,12 +124,12 @@
       font-size: 26px;
       line-height: 1;
     }
-    .stat-num.c-gold  { color: var(--gold); }
+    .stat-num.c-gold  { color: var(--gold-d); }
     .stat-num.c-red   { color: var(--red-p); }
-    .stat-num.c-blue  { color: var(--blue-p); }
+    .stat-num.c-blue  { color: var(--olive); }
     .stat-lbl {
       font-size: 11px;
-      color: var(--muted);
+      color: var(--text);
       margin-top: 4px;
       text-transform: uppercase;
       letter-spacing: 0.06em;
@@ -210,7 +211,7 @@
 
     /* ── TEST SCREEN ─────────────────── */
     .progress-wrap {
-      background: rgba(242,245,235,0.96);
+      background: rgba(242,235,218,0.96);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
       padding: 12px 24px;
@@ -260,18 +261,27 @@
       font-weight: 500;
       font-size: clamp(16px, 3.8vw, 19px);
       line-height: 1.45;
-      color: var(--text);
+      color: #000000;
       margin-bottom: 24px;
     }
-    .q-text .ca { font-style: italic; color: var(--gold); }
+    .q-text .ca {
+      font-style: italic;
+      color: #FFFFFF;
+      background: var(--gold-d);
+      padding: 1px 7px;
+      border-radius: 5px;
+    }
     .q-text .bl {
       display: inline-block;
       min-width: 64px;
-      border-bottom: 2px solid var(--gold);
-      color: var(--gold);
+      border-bottom: 2px solid var(--gold-d);
+      color: #FFFFFF;
+      background: var(--gold-d);
+      padding: 1px 7px;
+      border-radius: 5px;
       font-style: italic;
     }
-    .q-text .hint { font-size: 0.78em; color: var(--blue-p); font-weight: 400; font-style: italic; opacity: 0.85; }
+    .q-text .hint { font-size: 0.78em; color: #000000; font-weight: 400; font-style: italic; opacity: 0.85; }
 
     .options { display: flex; flex-direction: column; gap: 10px; margin-bottom: 28px; }
     .opt {
@@ -288,7 +298,7 @@
       transition: border-color 0.12s, background 0.12s;
     }
     .opt:hover { border-color: var(--gold); background: var(--input); }
-    .opt.selected { border-color: var(--gold); background: var(--gold-lt); color: #7A5C00; font-weight: 500; }
+    .opt.selected { border-color: var(--gold); background: var(--bg); color: var(--text); font-weight: 500; }
 
     .btn-next {
       width: 100%;
@@ -337,15 +347,15 @@
       transform: translateX(-50%);
       width: 560px; height: 400px;
       background:
-        radial-gradient(ellipse at 30% 50%, rgba(196,94,98,0.12) 0%, transparent 55%),
-        radial-gradient(ellipse at 70% 50%, rgba(74,143,170,0.12) 0%, transparent 55%),
-        radial-gradient(ellipse at 50% 70%, rgba(201,162,40,0.1) 0%, transparent 55%);
+        radial-gradient(ellipse at 30% 50%, rgba(99,30,110,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 70% 50%, rgba(139,107,201,0.12) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 70%, rgba(185,168,221,0.18) 0%, transparent 55%);
       pointer-events: none;
     }
     .level-badge {
       display: inline-block;
       background: var(--gold);
-      color: #1E2414;
+      color: #FFFFFF;
       font-family: 'Space Grotesk', sans-serif;
       font-weight: 700;
       font-size: 20px;
@@ -436,7 +446,7 @@
 <div id="s-intro" class="screen active">
 
   <div class="topbar">
-    <div class="topbar-brand">Catalan<span>WithBet</span></div>
+    <div class="topbar-brand">Catalan<span>With</span>Bet</div>
   </div>
 
   <div class="intro-hero">
@@ -482,7 +492,7 @@
 <div id="s-test" class="screen">
 
   <div class="topbar">
-    <div class="topbar-brand">Catalan<span>WithBet</span></div>
+    <div class="topbar-brand">Catalan<span>With</span>Bet</div>
   </div>
 
   <div class="progress-wrap">
@@ -509,7 +519,7 @@
 <div id="s-results" class="screen">
 
   <div class="topbar">
-    <div class="topbar-brand">Catalan<span>WithBet</span></div>
+    <div class="topbar-brand">Catalan<span>With</span>Bet</div>
   </div>
 
   <div class="res-hero">
@@ -539,7 +549,7 @@
 // ═══════════════════════════════════════════
 const SUPABASE_URL = 'https://nergtufwnayhocadylub.supabase.co'; // → Project Settings → API
 const SUPABASE_KEY = 'sb_publishable_jJhQrE7vm10_2X_4XJHgnw_-VtLExnI'; // → publishable key (safe to expose client-side)
-const CALENDLY     = 'https://calendly.com/learnwithbet/clase-de-60-minutos-clone-1';  // → "60 minutes class" (60 min, EN, específic per a català)
+const BOOK_URL     = 'https://www.catalanwithbet.com/classes/#tarifes';  // → pàgina de packs de classes
 
 // ═══════════════════════════════════════════
 // QUESTIONS (30 total — 5 per CEFR level)
@@ -553,7 +563,7 @@ const Q = [
   },
   {
     lv:'A1', tp:'Select the correct word',
-    tx:'Which is the Catalan word for <em>house</em>?',
+    tx:'Which is the Catalan word for <span class="ca">house</span>?',
     op:['Porta', 'Casa', 'Finestra', 'Cuina'], ok:1
   },
   {
@@ -693,7 +703,7 @@ const Q = [
   },
   {
     lv:'C2', tp:'Select the correct word',
-    tx:'«El projecte estava ben planificat; <span class="bl">___</span>, no va superar la revisió final.»',
+    tx:'"El projecte estava ben planificat; <span class="bl">___</span>, no va superar la revisió final."',
     op:['per tant','tanmateix','a més a més','ja que'], ok:1
   },
   {
@@ -905,7 +915,7 @@ function showResults() {
     ctaBtn.href = `mailto:bet@catalanwithbet.com?subject=Consulta%20nivell%20C2&body=Hola%20Bet%2C%20acabo%20de%20fer%20la%20prova%20de%20nivell%20i%20he%20obtingut%20C2.%20M%27agradaria%20parlar%20amb%20tu%20sobre%20les%20opcions%20disponibles.%20El%20meu%20nom%20és%20${encodeURIComponent(name)}.`;
   } else {
     ctaBtn.textContent = 'Book my first class with Bet →';
-    ctaBtn.href = `${CALENDLY}?name=${encodeURIComponent(name)}&email=${encodeURIComponent(mail)}&a1=${encodeURIComponent(r.badge)}`;
+    ctaBtn.href = BOOK_URL;
   }
 
   show('s-results');
