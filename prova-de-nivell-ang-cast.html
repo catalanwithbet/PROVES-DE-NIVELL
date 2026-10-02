@@ -182,6 +182,25 @@
     }
     .field input:focus { border-color: var(--gold); }
     .field input::placeholder { color: rgba(0,0,0,0.25); }
+    .consent {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 4px 0 16px;
+      font-size: 12.5px;
+      line-height: 1.55;
+      color: var(--muted);
+      cursor: pointer;
+    }
+    .consent input {
+      flex-shrink: 0;
+      width: 18px;
+      height: 18px;
+      margin-top: 1px;
+      accent-color: var(--olive);
+      cursor: pointer;
+    }
+    .consent a { color: var(--olive); text-decoration: underline; }
     .privacy-note {
       font-size: 11.5px;
       color: var(--muted);
@@ -486,6 +505,10 @@
         <label for="u-email">Email address</label>
         <input type="email" id="u-email" placeholder="anna@email.com" autocomplete="email">
       </div>
+      <label class="consent">
+        <input type="checkbox" id="u-consent">
+        <span>I agree that CatalanWithBet may store my details to send me my result and contact me about classes. See the <a id="privacy-link" href="https://www.catalanwithbet.com/privacy-policy/" target="_blank" rel="noopener">privacy policy</a>.</span>
+      </label>
       <button class="btn-primary" onclick="startTest()">Start the test →</button>
       <p class="privacy-note">🔒 Your info won't be shared with anyone. You'll receive your level by email.</p>
     </div>
@@ -555,6 +578,7 @@
 const SUPABASE_URL = 'https://nergtufwnayhocadylub.supabase.co'; // → Project Settings → API
 const SUPABASE_KEY = 'sb_publishable_jJhQrE7vm10_2X_4XJHgnw_-VtLExnI'; // → publishable key (safe to expose client-side)
 const BOOK_URL      = 'https://www.catalanwithbet.com/classes/#tarifes';  // → pàgina de tarifes
+const PRIVACY_URL   = 'https://www.catalanwithbet.com/privacy-policy/';  // → política de privacitat
 
 // ═══════════════════════════════════════════
 // QUESTIONS (30 total — 5 per CEFR level)
@@ -810,6 +834,7 @@ function startTest() {
   mail = document.getElementById('u-email').value.trim();
   if (!name || !mail) { alert('Please enter your name and email to start.'); return; }
   if (!validEmail(mail)) { alert('Please enter a valid email address.'); return; }
+  if (!document.getElementById('u-consent').checked) { alert('Please accept the privacy policy to start.'); return; }
   show('s-test');
   loadQ(0);
 }
@@ -954,6 +979,8 @@ async function submitData(levelKeyVal, levelLabel, pts) {
     });
   } catch (e) { /* silent — result shown regardless */ }
 }
+
+document.getElementById('privacy-link').href = PRIVACY_URL;
 
 // Enter key support on intro form
 document.addEventListener('keydown', e => {
