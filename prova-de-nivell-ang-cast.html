@@ -438,6 +438,11 @@
       transition: color 0.15s;
     }
     .btn-ig:hover { color: var(--text); }
+    /* Hide the newsletter block WordPress/Jetpack injects into the page */
+    .wp-block-jetpack-subscriptions,
+    .jetpack_subscription_widget,
+    .jetpack-subscribe-modal,
+    .jetpack-subscribe-overlay { display: none !important; }
   </style>
 </head>
 <body>
@@ -954,6 +959,23 @@ async function submitData(levelKeyVal, levelLabel, pts) {
 document.addEventListener('keydown', e => {
   if (e.key === 'Enter' && document.getElementById('s-intro').classList.contains('active')) startTest();
 });
+// WordPress (Jetpack) injects a "don't forget to subscribe" note that isn't
+// part of this page; remove it, including if it's added after load.
+function removeInjectedSubscribe() {
+  const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  const hits = [];
+  while (walker.nextNode()) {
+    if (/forget to subscribe/i.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
+  }
+  hits.forEach(node => {
+    const el = node.parentElement;
+    if (el && el !== document.body && !el.querySelector('.screen')) el.remove();
+    else node.remove();
+  });
+}
+removeInjectedSubscribe();
+document.addEventListener('DOMContentLoaded', removeInjectedSubscribe);
+new MutationObserver(removeInjectedSubscribe).observe(document.body, { childList: true, subtree: true });
 </script>
 
 </body>
