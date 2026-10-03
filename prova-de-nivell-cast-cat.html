@@ -289,10 +289,28 @@
 </div>
 
 <script>
+/* Shows any JavaScript error on the page inside the form's red box, so a
+   problem on the live site can be read without opening the browser console. */
+(function(){
+  window.addEventListener('error', function(e){
+    var apps = document.querySelectorAll('[id="cwb-test-app"]');
+    var box = apps.length && apps[apps.length-1].querySelector('.form-err');
+    if (!box) return;
+    box.textContent = 'Error: ' + e.message + ' (' + (e.filename || 'inline') + ':' + e.lineno + ')';
+    box.classList.add('show');
+  });
+})();
+</script>
+<script>
 (function(){
   // Work only inside this block, so another copy of the test on the same
   // page (e.g. an old block left behind) can't steal its inputs or buttons.
-  var root = document.currentScript.parentNode;
+  // Fallback for optimisation plugins that move inline scripts elsewhere.
+  var me = document.currentScript;
+  var root = (me && me.closest && me.closest('[id="cwb-test-app"]')) || (function(){
+    var apps = document.querySelectorAll('[id="cwb-test-app"]');
+    return apps[apps.length-1];
+  })();
   /* ══════════════════════════════════════════════
      CONFIG · RELLENA ESTOS 2 VALORES DE SUPABASE
      ══════════════════════════════════════════════ */
