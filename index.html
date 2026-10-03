@@ -1002,8 +1002,10 @@ function removeInjectedSubscribe() {
     if (/forget to subscribe/i.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
   }
   hits.forEach(node => {
+    // Drop the wrapper only when it holds nothing but this note; otherwise
+    // (e.g. the text lands inside .intro-hero) remove just the text.
     const el = node.parentElement;
-    if (el && el !== document.body && !el.querySelector('.screen')) el.remove();
+    if (el && el !== document.body && el.textContent.trim() === node.nodeValue.trim()) el.remove();
     else node.remove();
   });
 }
