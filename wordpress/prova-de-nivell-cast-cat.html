@@ -2,8 +2,8 @@
      PRUEBA DE NIVEL DE CATALÁN (para castellanohablantes) · CatalanWithBet
      Autora: Elisabet Cervera
      Pega este bloque en un bloque "HTML personalizado" de WordPress
-     (Fichero generado con build-wordpress.py: el JavaScript va codificado
-      para que WordPress no lo modifique. Edita prova-de-nivell-cast-cat.html.)
+     (Fichero generado con build-wordpress.py: el JavaScript va dentro del
+      atributo data-cwb-js para que WordPress no cambie sus comillas.)
      ──────────────────────────────────────────────
      Connexions ja configurades:
      - Supabase (URL + publishable key) → taula "leads" del projecte CATALANWITHBET.
@@ -290,5 +290,299 @@
   </div>
 </div>
 
-<script data-cwb-js="KGZ1bmN0aW9uKCl7CiAgLy8gV29yayBvbmx5IGluc2lkZSB0aGlzIGJsb2NrLCBzbyBhbm90aGVyIGNvcHkgb2YgdGhlIHRlc3Qgb24gdGhlIHNhbWUKICAvLyBwYWdlIChlLmcuIGFuIG9sZCBibG9jayBsZWZ0IGJlaGluZCkgY2FuJ3Qgc3RlYWwgaXRzIGlucHV0cyBvciBidXR0b25zLgogIC8vIEZhbGxiYWNrIGZvciBvcHRpbWlzYXRpb24gcGx1Z2lucyB0aGF0IG1vdmUgaW5saW5lIHNjcmlwdHMgZWxzZXdoZXJlLgogIHZhciBtZSA9IGRvY3VtZW50LmN1cnJlbnRTY3JpcHQ7CiAgdmFyIHJvb3QgPSAobWUgJiYgbWUuY2xvc2VzdCAmJiBtZS5jbG9zZXN0KCdbaWQ9ImN3Yi10ZXN0LWFwcCJdJykpIHx8IChmdW5jdGlvbigpewogICAgdmFyIGFwcHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCdbaWQ9ImN3Yi10ZXN0LWFwcCJdJyk7CiAgICByZXR1cm4gYXBwc1thcHBzLmxlbmd0aC0xXTsKICB9KSgpOwogIC8qIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkAogICAgIENPTkZJRyDCtyBSRUxMRU5BIEVTVE9TIDIgVkFMT1JFUyBERSBTVVBBQkFTRQogICAgIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkCAqLwogIHZhciBTVVBBQkFTRV9VUkwgICAgICA9ICdodHRwczovL25lcmd0dWZ3bmF5aG9jYWR5bHViLnN1cGFiYXNlLmNvJzsgLy8g4oaQIHByb3llY3RvIENBVEFMQU5XSVRIQkVUIOKckwogIHZhciBTVVBBQkFTRV9BTk9OX0tFWSA9ICdzYl9wdWJsaXNoYWJsZV9qSmhRckU3dm0xMF8yWF80WEpIZ253Xy1WdExFeG5JJzsgLy8g4oaQIGNsYXZlIHB1Ymxpc2hhYmxlIOKckwoKICAvLyBQw6FnaW5hIGRlIHRhcmlmYXMgZG9uZGUgZWwgY2xpZW50ZSBwYWdhIGxhIHNlc2nDs24gKENUQSBmaW5hbCBkZWwgdGVzdCkKICB2YXIgQ0xBU1NFU19VUkwgICAgICAgPSAnaHR0cHM6Ly93d3cuY2F0YWxhbndpdGhiZXQuY29tL2NsYXNzZXMvI3RhcmlmZXMnOwogIC8qIOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkOKVkCAqLwoKICAvLyAzMCBwcmVndW50YXMg4oCUIDUgcG9yIG5pdmVsIE1DRVIKICB2YXIgUSA9IFsKICAgIC8vIOKUgOKUgOKUgCBBMSAoMS01KSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIHtsdjonQTEnLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/Q3XDoWwgZXMgbGEgdHJhZHVjY2nDs24gY29ycmVjdGEgZGUgPHNwYW4gY2xhc3M9ImNhIj4iQnVlbm9zIGTDrWFzIjwvc3Bhbj4gZW4gY2F0YWzDoW4/JyxvcDpbJ0JvbmEgbml0JywnQm9uYSB0YXJkYScsJ0JvbiBkaWEnLCdBZMOpdSddLG9rOjJ9LAogICAge2x2OidBMScsdHA6J0VsaWdlIGxhIHBhbGFicmEgY29ycmVjdGEnLHR4OifCv0PDs21vIHNlIGRpY2UgPHNwYW4gY2xhc3M9ImNhIj4ibWVzYSI8L3NwYW4+IGVuIGNhdGFsw6FuPycsb3A6WydNZXNhJywnVGF1bGEnLCdDYWRpcmEnLCdQb3J0YSddLG9rOjF9LAogICAge2x2OidBMScsdHA6J1JlbGxlbmEgZWwgaHVlY28nLHR4OidFbSA8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gQW5uYS4gPHNwYW4gY2xhc3M9ImhpbnQiPihNZSBsbGFtbyBBbm5hLik8L3NwYW4+JyxvcDpbJ2RpYycsJ2RpdScsJ2RpdXMnLCdkaXInXSxvazowfSwKICAgIHtsdjonQTEnLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/UXXDqSBzaWduaWZpY2EgPHNwYW4gY2xhc3M9ImNhIj4iR3LDoGNpZXMiPC9zcGFuPj8nLG9wOlsnUG9yIGZhdm9yJywnRGUgbmFkYScsJ0dyYWNpYXMnLCdQZXJkw7NuJ10sb2s6Mn0sCiAgICB7bHY6J0ExJyx0cDonT3BjacOzbiBtw7psdGlwbGUnLHR4OifCv0PDs21vIHNlIGRpY2UgPHNwYW4gY2xhc3M9ImNhIj4iZWwgYWd1YSI8L3NwYW4+IGVuIGNhdGFsw6FuPycsb3A6WydlbCBhaWd1YScsJ2xhIGFpZ3VhJywibCdhaWd1YSIsJ2xvIGFpZ3VhJ10sb2s6Mn0sCgogICAgLy8g4pSA4pSA4pSAIEEyICg2LTEwKSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIHtsdjonQTInLHRwOidSZWxsZW5hIGVsIGh1ZWNvJyx0eDonPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IG1vbHQgY29udGVudGEuIDxzcGFuIGNsYXNzPSJoaW50Ij4oRXN0b3kgbXV5IGNvbnRlbnRhLik8L3NwYW4+JyxvcDpbJ1NvYycsJ0VzdGljJywnRXN0w6BzJywnU29tJ10sb2s6MX0sCiAgICB7bHY6J0EyJyx0cDonRWxpZ2UgbGEgcGFsYWJyYSBjb3JyZWN0YScsdHg6J1Zpc2MgPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IEJhcmNlbG9uYS4nLG9wOlsnYScsJ2VuJywncGVyJywnZGUnXSxvazowfSwKICAgIHtsdjonQTInLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/Q8OzbW8gc2UgZGljZSA8c3BhbiBjbGFzcz0iY2EiPiJIYXkgbXVjaGEgZ2VudGUiPC9zcGFuPiBlbiBjYXRhbMOhbj8nLG9wOlsnSGEgbW9sdGEgZ2VudCcsJ8OJcyBtb2x0YSBnZW50JywnSGkgaGEgbW9sdGEgZ2VudCcsJ1TDqSBtb2x0YSBnZW50J10sb2s6Mn0sCiAgICB7bHY6J0EyJyx0cDonUmVsbGVuYSBlbCBodWVjbycsdHg6J1RpbmMgPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IGFueXMuIDxzcGFuIGNsYXNzPSJoaW50Ij4oVGVuZ28gMjUgYcOxb3MuKTwvc3Bhbj4nLG9wOlsndmludC1pLWNpbmMnLCd2aW50aWNpbmMnLCd2aW50LWkgY2luYycsJ3ZlaW50LWktY2luYyddLG9rOjB9LAogICAge2x2OidBMicsdHA6J1JlbGxlbmEgZWwgaHVlY28nLHR4Oic8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gdHJlYmFsbGFyIGRlbcOgLiA8c3BhbiBjbGFzcz0iaGludCI+KFRlbmdvIHF1ZSB0cmFiYWphciBtYcOxYW5hLik8L3NwYW4+JyxvcDpbJ1RpbmMgcXVlJywnSGUgZGUnLCdIaSBoYSBxdWUnLCdFc3RpYyBkZSddLG9rOjF9LAoKICAgIC8vIOKUgOKUgOKUgCBCMSAoMTEtMTUpIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAge2x2OidCMScsdHA6J1JlbGxlbmEgZWwgaHVlY28nLHR4OidBaGlyIDxzcGFuIGNsYXNzPSJibCI+X19fPC9zcGFuPiBhbCBjaW5lbWEuIDxzcGFuIGNsYXNzPSJoaW50Ij4oQXllciBmdWkgYWwgY2luZS4pPC9zcGFuPicsb3A6Wyd2YWlnIGFuYXInLCd2YSBhbmFyJywndmFpZyBhIGFuYXInLCdoZSBhbmF0J10sb2s6MH0sCiAgICB7bHY6J0IxJyx0cDonRWxpZ2UgbGEgcGFsYWJyYSBjb3JyZWN0YScsdHg6J0hhcyB2aXN0IGxhIHBlbMK3bMOtY3VsYT8gU8OtLCBqYSA8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gdmlzdGEuJyxvcDpbJ2xhIGhlJywibCdoZSIsJ2xpIGhlJywnaG8gaGUnXSxvazoxfSwKICAgIHtsdjonQjEnLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/Q3XDoWwgZXMgbGEgZm9ybWEgY29ycmVjdGE/IDxzcGFuIGNsYXNzPSJoaW50Ij4oSGFjZSBkb3MgYcOxb3MgcXVlIHZpdm8gYXF1w60uKTwvc3Bhbj4nLG9wOlsnRmEgZG9zIGFueXMgcXVlIHZpc2MgYXF1w60nLCdGYSBkb3MgYW55cyBxdWUgdml2byBhcXXDrScsJ0hpIGhhIGRvcyBhbnlzIHF1ZSB2aXNjIGFxdcOtJywnRmEgZG9zIGFueXMgcXVlIHZpdXMgYXF1w60nXSxvazowfSwKICAgIHtsdjonQjEnLHRwOidSZWxsZW5hIGVsIGh1ZWNvJyx0eDonTm8gPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IHZhaWcgdmV1cmUgYWhpci4gPHNwYW4gY2xhc3M9ImhpbnQiPihObyBsb3MgdmkgYXllci4pPC9zcGFuPicsb3A6Wydsb3MnLCdlbHMnLCdsZXMnLCdobyddLG9rOjF9LAogICAge2x2OidCMScsdHA6J1JlbGxlbmEgZWwgaHVlY28nLHR4OidUZW5zIHBhPyBObywgbm8gPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IHRpbmMuIDxzcGFuIGNsYXNzPSJoaW50Ij4owr9UaWVuZXMgcGFuPyBObywgbm8gdGVuZ28uKTwvc3Bhbj4nLG9wOlsnaG8nLCdlbCcsJ2VuJywnaGknXSxvazoyfSwKCiAgICAvLyDilIDilIDilIAgQjIgKDE2LTIwKSDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIDilIAKICAgIHtsdjonQjInLHRwOidFbGlnZSBsYSBwYWxhYnJhIGNvcnJlY3RhJyx0eDonQXF1ZXN0YSDDqXMgbGEgbm9pYSA8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gdHJlYmFsbGEgYW1iIG1pLicsb3A6WydxdWUgZWwgc2V1IHBhcmUnLCdlbCBwYXJlIGRlIGxhIHF1YWwnLCdxdWUgZWwgcGFyZScsJ29uIGVsIHBhcmUnXSxvazoxfSwKICAgIHtsdjonQjInLHRwOidSZWxsZW5hIGVsIGh1ZWNvJyx0eDonVnVsbCBxdWUgPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IGEgbGEgZmVzdGEuIDxzcGFuIGNsYXNzPSJoaW50Ij4oUXVpZXJvIHF1ZSB2ZW5nYXMuKTwvc3Bhbj4nLG9wOlsndmVucycsJ3ZpbmRyw6BzJywndmluZ3VpcycsJ3ZlbmllcyddLG9rOjJ9LAogICAge2x2OidCMicsdHA6J0VsaWdlIGxhIHBhbGFicmEgY29ycmVjdGEnLHR4OidWYXMgZG9uYXIgZWwgbGxpYnJlIGEgbGEgTWFyaWE/IFPDrSwgPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IHZhaWcgZG9uYXIuIDxzcGFuIGNsYXNzPSJoaW50Ij4oU8OtLCBzZSBsbyBkaS4pPC9zcGFuPicsb3A6WyJsaSdsIiwic2UnbCIsImwnaGkiLCdsaSBobyddLG9rOjJ9LAogICAge2x2OidCMicsdHA6J09wY2nDs24gbcO6bHRpcGxlJyx0eDpgwr9RdcOpIHNpZ25pZmljYSA8c3BhbiBjbGFzcz0iY2EiPiJObyBtJ2FncmFkYSBnZW5zIjwvc3Bhbj4/YCxvcDpbJ05vIG1lIGd1c3RhIGxhIGdlbnRlJywnTm8gbWUgZ3VzdGEgbXVjaG8nLCdObyBtZSBndXN0YSBuYWRhJywnTm8gbWUgZ3VzdGEgYSB2ZWNlcyddLG9rOjJ9LAogICAge2x2OidCMicsdHA6J1JlbGxlbmEgZWwgaHVlY28nLHR4OmBTaSBoYWd1w6lzIGVzdHVkaWF0IG3DqXMsIDxzcGFuIGNsYXNzPSJibCI+X19fPC9zcGFuPiBsJ2V4YW1lbi5gLG9wOlsnaGF1cmlhIGFwcm92YXQnLCdoYXZpYSBhcHJvdmF0JywnYXByb3ZvJywnYXByb3ZhcsOpJ10sb2s6MH0sCgogICAgLy8g4pSA4pSA4pSAIEMxICgyMS0yNSkg4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSA4pSACiAgICB7bHY6J0MxJyx0cDonRWxpZ2UgbGEgcGFsYWJyYSBjb3JyZWN0YScsdHg6J05vIGhvIGhlIGZldCBqbywgPHNwYW4gY2xhc3M9ImJsIj5fX188L3NwYW4+IGVsIG1ldSBnZXJtw6AuJyxvcDpbJ3NpIG5vJywnc2luw7MnLCdzaW5vJywnc2kgYsOpJ10sb2s6MX0sCiAgICB7bHY6J0MxJyx0cDonT3BjacOzbiBtw7psdGlwbGUnLHR4OifCv0N1w6FsIGVzIGxhIGZyYXNlIGdyYW1hdGljYWxtZW50ZSBjb3JyZWN0YT8nLG9wOlsnQ2FsIHF1ZSB0b3Rob20gcG9ydGkgbGEgZG9jdW1lbnRhY2nDsycsJ0NhbCBxdWUgdG90aG9tIHBvcnRhIGxhIGRvY3VtZW50YWNpw7MnLCdDYWwgcXVlIHRvdGhvbSBwb3J0YXLDoCBsYSBkb2N1bWVudGFjacOzJywnQ2FsIHRvdGhvbSBwb3J0aSBsYSBkb2N1bWVudGFjacOzJ10sb2s6MH0sCiAgICB7bHY6J0MxJyx0cDonRWxpZ2UgbGEgcGFsYWJyYSBjb3JyZWN0YScsdHg6J0VzdGljIHNlZ3VyIDxzcGFuIGNsYXNzPSJibCI+X19fPC9zcGFuPiB2aW5kcsOgLicsb3A6WydkZSBxdWUnLCdxdWUnLCdkZSBxdcOoJywnZGVsIHF1ZSddLG9rOjF9LAogICAge2x2OidDMScsdHA6J0VsaWdlIGxhIHBhbGFicmEgY29ycmVjdGEnLHR4OidRdWFudHMgbGxpYnJlcyBoaSBoYSBhIGxhIHRhdWxhPyA8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gdHJlcy4nLG9wOlsnSGkgaGEnLCJOJ2hpIGhhIiwiSGkgbidoYSIsJ0VuIGhhJ10sb2s6MX0sCiAgICB7bHY6J0MxJyx0cDonUmVsbGVuYSBlbCBodWVjbycsdHg6J05vIGNvbnRlc3RhIGFsIHRlbMOoZm9uOyA8c3BhbiBjbGFzcz0iYmwiPl9fXzwvc3Bhbj4gZXN0YXIgZG9ybWludC4nLG9wOlsnZGV1JywnZGV1IGRlJywndMOpIHF1ZScsJ2hpIGhhIHF1ZSddLG9rOjB9LAoKICAgIC8vIOKUgOKUgOKUgCBDMiAoMjYtMzApIOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgOKUgAogICAge2x2OidDMicsdHA6J0lkZW50aWZpY2EgZWwgZXJyb3InLHR4OidJZGVudGlmaWNhIGxhIGZyYXNlIGNvbiB1biBlcnJvciBncmFtYXRpY2FsOicsb3A6WydNYWxncmF0IHF1ZSBwbG9ndcOpcywgdmFuIHNvcnRpciBpZ3VhbG1lbnQuJywnVG90IGkgZWwgbWFsIHRlbXBzLCB2YW4gYW5hciBhIGxhIHBsYXRqYS4nLCdEZWd1dCBhIHF1ZSB0cmViYWxsYXZhIHRhcmQsIG5vIGVscyB2ZWlhLicsJ0NvbSBxdWUgZmVpYSBmcmVkLCBlcyB2YW4gcXVlZGFyIGEgY2FzYS4nXSxvazoyfSwKICAgIHtsdjonQzInLHRwOidFbGlnZSBsYSBwYWxhYnJhIGNvcnJlY3RhJyx0eDonwqtFbCBwcm9qZWN0ZSBlc3RhdmEgYmVuIHBsYW5pZmljYXQ7IDxzcGFuIGNsYXNzPSJibCI+X19fPC9zcGFuPiwgbm8gdmEgc3VwZXJhciBsYSByZXZpc2nDsy7Cuycsb3A6WydwZXIgdGFudCcsJ3Rhbm1hdGVpeCcsJ2EgbcOpcyBhIG3DqXMnLCdqYSBxdWUnXSxvazoxfSwKICAgIHtsdjonQzInLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/UXXDqSBleHByZXNpw7NuIGVzIGdlbnVpbmFtZW50ZSBjYXRhbGFuYSAobm8gdW4gY2FsY28gZGVsIGNhc3RlbGxhbm8pPycsb3A6WydEaXNmcnV0YXInLCdFbnlvcmFyJywnRXh0cmFueWFyJywnRG9uYXItc2UgY29tcHRlJ10sb2s6MX0sCiAgICB7bHY6J0MyJyx0cDonT3BjacOzbiBtw7psdGlwbGUnLHR4OifCv1F1w6kgc2lnbmlmaWNhIDxzcGFuIGNsYXNzPSJjYSI+IlBsb3UgYSBib3RzIGkgYmFycmFscyI8L3NwYW4+Pycsb3A6WydMbHVldmUgdW4gcG9jbycsJ0xsdWV2ZSBhIGPDoW50YXJvcycsJ0hhY2UgbXVjaG8gdmllbnRvJywnSGF5IHRvcm1lbnRhIGVsw6ljdHJpY2EnXSxvazoxfSwKICAgIHtsdjonQzInLHRwOidPcGNpw7NuIG3Dumx0aXBsZScsdHg6J8K/UXXDqSBzaWduaWZpY2EgPHNwYW4gY2xhc3M9ImNhIj4iRXQgZmFpZyBjaW5jIGPDqG50aW1zIGRlIGxhIHJldW5pw7MiPC9zcGFuPj8nLG9wOlsnVGUgcGFnbyBjaW5jbyBjw6ludGltb3MgcG9yIGxhIHJldW5pw7NuJywnVGUgcmVzdW1vIGJyZXZlbWVudGUgbGEgcmV1bmnDs24nLCdUZSBjb2JybyBwb2NvIHBvciBsYSByZXVuacOzbicsJ1RlIGN1ZW50byBsb3MgZGV0YWxsZXMgbcOhcyBjYXJvcyBkZSBsYSByZXVuacOzbiddLG9rOjF9CiAgXTsKCiAgdmFyIFIgPSB7CiAgICB6OntiYWRnZTonUHJpbmNpcGlhbnRlJyx0aXRsZTonwqFFbXBlemFtb3MgZGVzZGUgY2VybyDigJQgeSBlcyBwZXJmZWN0YW1lbnRlIG5vcm1hbCEnLGRlc2M6J1RpZW5lcyBwb2NvcyBvIG5pbmfDum4gY29ub2NpbWllbnRvIHByZXZpbyBkZSBjYXRhbMOhbi4gUGVybyBjb21vIGNhc3RlbGxhbm9oYWJsYW50ZSBwYXJ0ZXMgY29uIHVuYSBncmFuIHZlbnRhamE6IGNvbXBhcnTDrXMgbXVjaMOtc2ltbyB2b2NhYnVsYXJpbyB5IGVzdHJ1Y3R1cmFzLiBDb24gZWwgbcOpdG9kbyBhZGVjdWFkbywgYXZhbnphcsOhcyBtdWNobyBtw6FzIHLDoXBpZG8gZGUgbG8gcXVlIGNyZWVzLicsbmV4dDonTGFzIGNsYXNlcyBkZSBCZXQgcGFyYSBwcmluY2lwaWFudGVzIGVzdMOhbiBwZW5zYWRhcyBleGFjdGFtZW50ZSBwYXJhIHRpIOKAlCBzaW4gbmluZ8O6biByZXF1aXNpdG8gcHJldmlvLiBFbXBlemFtb3MgZGVzZGUgZWwgcHJpbmNpcGlvIHkgY29uc3RydWltb3MgdW5hIGJhc2Ugc8OzbGlkYSBqdW50b3MsIGFwcm92ZWNoYW5kbyBsbyBxdWUgeWEgc2FiZXMgZGVsIGNhc3RlbGxhbm8uJyxwaXBzOjB9LAogICAgYTE6e2JhZGdlOidBMSDigJQgQsOhc2ljbycsdGl0bGU6J8KhWWEgc2FiZXMgdW4gcG9jbyBkZSBjYXRhbMOhbiEnLGRlc2M6J1B1ZWRlcyBlbnRlbmRlciB5IHVzYXIgZXhwcmVzaW9uZXMgY290aWRpYW5hcyBtdXkgYsOhc2ljYXMuIFB1ZWRlcyBwcmVzZW50YXJ0ZSBlIGludGVyYWN0dWFyIGRlIGZvcm1hIHNlbmNpbGxhLiBFbCByZXRvIGFob3JhIGVzIG5vIGRlamFydGUgbGxldmFyIHBvciBlbCBjYXN0ZWxsYW5vOiBoYXkgZXN0cnVjdHVyYXMgcXVlIHBhcmVjZW4gaWd1YWxlcyBwZXJvIG5vIGxvIHNvbi4nLG5leHQ6J0VuIGVzdGUgbml2ZWwsIEJldCB0ZSBheXVkYXLDoSBhIGNvbnN0cnVpciBiYXNlcyBzw7NsaWRhczogcHJvbnVuY2lhY2nDs24sIGdyYW3DoXRpY2EgYsOhc2ljYSB5IGxvcyBwdW50b3MgZG9uZGUgZWwgY2F0YWzDoW4gc2Ugc2VwYXJhIGRlbCBjYXN0ZWxsYW5vLiDCoVZhbW9zIGEgcG9yIGVsbG8hJyxwaXBzOjF9LAogICAgYTI6e2JhZGdlOidBMiDigJQgRWxlbWVudGFsJyx0aXRsZTonVmFzIHBvciBidWVuIGNhbWlubyDigJQgwqFidWVuIHByb2dyZXNvIScsZGVzYzonUHVlZGVzIGVudGVuZGVyIGZyYXNlcyBzb2JyZSB0ZW1hcyBjb3RpZGlhbm9zIGUgaW50ZXJjYW1iaWFyIGluZm9ybWFjacOzbiBiw6FzaWNhLiBZYSB0ZSBjb211bmljYXMsIHBlcm8gYWxndW5vcyB0aWVtcG9zIHZlcmJhbGVzLCBwcm9ub21icmVzIGTDqWJpbGVzIChlbiwgaGkpIHkgZmFsc29zIGFtaWdvcyBhw7puIG5lY2VzaXRhbiB0cmFiYWpvLicsbmV4dDonRW4gQTIsIEJldCBjb25zb2xpZGFyw6EgdHUgZ3JhbcOhdGljYSwgYW1wbGlhcsOhIHR1IHZvY2FidWxhcmlvIHkgdHJhYmFqYXLDoSBjb250aWdvIGVzb3MgZGV0YWxsZXMgcXVlIG1hcmNhbiBsYSBkaWZlcmVuY2lhIGVudHJlICJ0cmFkdWNpciBkZWwgY2FzdGVsbGFubyIgeSAiaGFibGFyIGNhdGFsw6FuIi4gwqFTZWd1aW1vcyEnLHBpcHM6Mn0sCiAgICBiMTp7YmFkZ2U6J0IxIOKAlCBJbnRlcm1lZGlvJyx0aXRsZTonwqFZYSB0ZSBkZWZpZW5kZXMgZW4gY2F0YWzDoW4hJyxkZXNjOidQdWVkZXMgZ2VzdGlvbmFyIGxhIG1heW9yw61hIGRlIHNpdHVhY2lvbmVzIGVuIHVuIGVudG9ybm8gY2F0YWxhbm9oYWJsYW50ZS4gRGVzY3JpYmVzIGV4cGVyaWVuY2lhcywgcGxhbmVzIHkgb3BpbmlvbmVzLiBMb3MgcHJvbm9tYnJlcyBmZWJsZXMgeSBhbGd1bm9zIGZhbHNvcyBhbWlnb3Mgc29uIGFob3JhIHR1IHByaW5jaXBhbCByZXRvLicsbmV4dDonRW4gQjEsIEJldCB0ZSBheXVkYXLDoSBhIHNvbmFyIG3DoXMgbmF0dXJhbCwgYSBkb21pbmFyIGxvcyBwcm9ub21icmVzIGTDqWJpbGVzIChlbiwgaGksIGVscykgeSBhIGNvbnN0cnVpciBlbCB2b2NhYnVsYXJpbyBwYXJhIGNvbnZlcnNhY2lvbmVzIHJlYWxlcy4gwqFBcXXDrSBlcyBkb25kZSBzZSBwb25lIGludGVyZXNhbnRlIScscGlwczozfSwKICAgIGIyOntiYWRnZTonQjIg4oCUIEludGVybWVkaW8gYWx0bycsdGl0bGU6J8KhSW1wcmVzaW9uYW50ZSDigJQgaGFibGFzIGNhdGFsw6FuIG11eSBiaWVuIScsZGVzYzonUHVlZGVzIGVudGVuZGVyIHRleHRvcyBjb21wbGVqb3MgZSBpbnRlcmFjdHVhciBjb24gZmx1aWRleiBjb24gaGFibGFudGVzIG5hdGl2b3MuIFRlIGFjZXJjYXMgYSBsYSBmbHVpZGV6IHJlYWwuIEFob3JhIHNlIHRyYXRhIGRlIHB1bGlyIGVsIHN1Ymp1bnRpdm8sIGxhcyBjb21iaW5hY2lvbmVzIGRlIHByb25vbWJyZXMgeSBldml0YXIgbG9zIGNhbGNvcyBkZWwgY2FzdGVsbGFuby4nLG5leHQ6J0VuIEIyLCBsYXMgY2xhc2VzIGRlIEJldCBzZSBjZW50cmFuIGVuIGVsIG1hdGl6OiBncmFtw6F0aWNhIGF2YW56YWRhLCBleHByZXNpb25lcyBnZW51aW5hcywgcmVnaXN0cm8geSBlc3RpbG8g4oCUIHkgc2VudGlydGUgY8OzbW9kby9hIGVuIGN1YWxxdWllciBzaXR1YWNpw7NuIGVuIGNhdGFsw6FuLicscGlwczo0fSwKICAgIGMxOntiYWRnZTonQzEg4oCUIEF2YW56YWRvJyx0aXRsZTonwqFNdXkgaW1wcmVzaW9uYW50ZSDigJQgZXN0w6FzIGVuIHVuIG5pdmVsIGF2YW56YWRvIScsZGVzYzonUHVlZGVzIGV4cHJlc2FyIGlkZWFzIGNvbiBmbHVpZGV6IHkgZXNwb250YW5laWRhZC4gVXNhcyBlbCBpZGlvbWEgZGUgZm9ybWEgZmxleGlibGUgcGFyYSBmaW5lcyBzb2NpYWxlcyB5IHByb2Zlc2lvbmFsZXMuIFR1cyByZXRvcyByZXN0YW50ZXMgc29uIGRlIGVzdGlsbywgcHJlY2lzacOzbiB5IHByb2Z1bmRpZGFkIGN1bHR1cmFsLicsbmV4dDonRW4gQzEsIEJldCB0cmFiYWphIGxvcyBkZXRhbGxlcyBmaW5vczogbWF0aWNlcyBzdXRpbGVzLCByaXF1ZXphIGRlIHZvY2FidWxhcmlvLCBleHByZXNpb25lcyBpZGlvbcOhdGljYXMgeSBlc2UgdGlwbyBkZSBmbHVpZGV6IHF1ZSB0ZSBoYWNlIGluZGlzdGluZ3VpYmxlIGRlIHVuIGhhYmxhbnRlIG5hdGl2by4nLHBpcHM6NX0sCiAgICBjMjp7YmFkZ2U6J0MyIOKAlCBNYWVzdHLDrWEnLHRpdGxlOidUdSBuaXZlbCB5YSBzdXBlcmEgbWlzIGN1cnNvcyDigJQgwqFwZXJvIGhhYmxlbW9zIScsZGVzYzonVGllbmVzIHVuIGRvbWluaW8gZGVsIGNhdGFsw6FuIGNhc2kgbmF0aXZvOiBwdWVkZXMgZXhwcmVzYXJ0ZSBjb24gZmx1aWRleiwgcHJlY2lzacOzbiB5IGVzcG9udGFuZWlkYWQgZW4gY3VhbHF1aWVyIGNvbnRleHRvLiBNaXMgY2xhc2VzIGxsZWdhbiBoYXN0YSBlbCBDMSwgcGVybyBzaSBxdWllcmVzIHBlcmZlY2Npb25hciBhc3BlY3RvcyBtdXkgZXNwZWPDrWZpY29zIGRlIGVzdGlsbywgcmVnaXN0cm8gYXZhbnphZG8gbyBtYXRpY2VzIGN1bHR1cmFsZXMsIHBvZGVtb3MgaGFibGFyIHBhcmEgZW5jb250cmFyIGxhIG1lam9yIG9wY2nDs24gcGFyYSB0aS4nLG5leHQ6J0VzY3LDrWJlbWUgZGlyZWN0YW1lbnRlIHkgdmFsb3JhbW9zIGp1bnRvcyBjw7NtbyBzYWNhciBlbCBtw6F4aW1vIHBhcnRpZG8gYSB0dSBjYXRhbMOhbi4gUXVpesOhIG5vIG5lY2VzaXRhcyBjbGFzZXMgcmVndWxhcmVzLCBwZXJvIHPDrSBzZXNpb25lcyBwdW50dWFsZXMgbXV5IGVzcGVjw61maWNhcy4nLHBpcHM6Nn0KICB9OwoKICB2YXIgY3VyID0gMDsKICB2YXIgYW5zd2VycyA9IG5ldyBBcnJheShRLmxlbmd0aCkuZmlsbChudWxsKTsKICB2YXIgdXNlciA9IHsgbmFtZTonJywgZW1haWw6JycgfTsKICB2YXIgc2F2ZWQgPSBmYWxzZTsKCiAgZnVuY3Rpb24gJChpZCl7IHJldHVybiByb290LnF1ZXJ5U2VsZWN0b3IoJyMnK2lkKTsgfQogIGZ1bmN0aW9uIHNob3coaWQpewogICAgdmFyIHNjciA9IHJvb3QucXVlcnlTZWxlY3RvckFsbCgnLnNjcmVlbicpOwogICAgZm9yICh2YXIgaT0wO2k8c2NyLmxlbmd0aDtpKyspIHNjcltpXS5jbGFzc0xpc3QucmVtb3ZlKCdhY3RpdmUnKTsKICAgICQoaWQpLmNsYXNzTGlzdC5hZGQoJ2FjdGl2ZScpOwogICAgcm9vdC5zY3JvbGxJbnRvVmlldyh7YmVoYXZpb3I6J3Ntb290aCcsYmxvY2s6J3N0YXJ0J30pOwogIH0KCiAgZnVuY3Rpb24gc2hvd0Vycihtc2cpeyB2YXIgZT0kKCdjd2ItZm9ybS1lcnInKTsgZS50ZXh0Q29udGVudD1tc2c7IGUuY2xhc3NMaXN0LmFkZCgnc2hvdycpOyB9CiAgZnVuY3Rpb24gY2xlYXJFcnIoKXsgJCgnY3diLWZvcm0tZXJyJykuY2xhc3NMaXN0LnJlbW92ZSgnc2hvdycpOyB9CiAgZnVuY3Rpb24gbWFyayhpZCxiYWQpeyAkKGlkKS5jbGFzc0xpc3RbYmFkPydhZGQnOidyZW1vdmUnXSgnY3diLWludmFsaWQnKTsgfQoKICAvLyBXcml0dGVuIHdpdGhvdXQgYmFja3NsYXNoZXM6IFdvcmRQcmVzcyBjYW4gc3RyaXAgdGhlbSB3aGVuIHNhdmluZyB0aGUgYmxvY2suCiAgZnVuY3Rpb24gdmFsaWRFbWFpbCh2KXsgcmV0dXJuIC9eW14gQF0rQFteIEBdK1suXVteIEBdezIsfSQvLnRlc3Qodik7IH0KCiAgZnVuY3Rpb24gc3RhcnQoKXsKICAgIGNsZWFyRXJyKCk7CiAgICB2YXIgbmFtZSAgPSAkKCdjd2ItdS1uYW1lJykudmFsdWUudHJpbSgpOwogICAgdmFyIGVtYWlsID0gJCgnY3diLXUtZW1haWwnKS52YWx1ZS50cmltKCk7CiAgICB2YXIgb2tOYW1lPSEhbmFtZSwgb2tFbWFpbD12YWxpZEVtYWlsKGVtYWlsKTsKICAgIG1hcmsoJ2N3Yi11LW5hbWUnLCFva05hbWUpOyBtYXJrKCdjd2ItdS1lbWFpbCcsIW9rRW1haWwpOwoKICAgIGlmICghb2tOYW1lIHx8ICFva0VtYWlsKXsKICAgICAgc2hvd0VycignUmV2aXNhIHR1cyBkYXRvczogbmVjZXNpdGFtb3MgdW4gbm9tYnJlIHkgdW4gZW1haWwgdsOhbGlkby4nKTsKICAgICAgcmV0dXJuOwogICAgfQogICAgaWYgKCEkKCdjd2ItdS1jb25zZW50JykuY2hlY2tlZCl7CiAgICAgIHNob3dFcnIoJ1BvciBmYXZvciwgYWNlcHRhIGxhIHBvbMOtdGljYSBkZSBwcml2YWNpZGFkIHBhcmEgY29udGludWFyLicpOwogICAgICByZXR1cm47CiAgICB9CiAgICB1c2VyID0geyBuYW1lOm5hbWUsIGVtYWlsOmVtYWlsIH07CiAgICBzaG93KCdjd2Itcy10ZXN0Jyk7CiAgICBsb2FkUSgwKTsKICB9CgogIGZ1bmN0aW9uIGxvYWRRKGkpewogICAgY3VyID0gaTsKICAgIHZhciBxID0gUVtpXTsKICAgIHZhciBwY3QgPSBNYXRoLm1heChNYXRoLnJvdW5kKChpL1EubGVuZ3RoKSoxMDApLDQpOwogICAgJCgnY3diLXAtZmlsbCcpLnN0eWxlLndpZHRoID0gcGN0KyclJzsKICAgICQoJ2N3Yi1wLWxhYmVsJykudGV4dENvbnRlbnQgPSAnUHJlZ3VudGEgJysoaSsxKSsnIGRlICcrUS5sZW5ndGg7CiAgICB2YXIgbHZFbCA9ICQoJ2N3Yi1wLWxldmVsJyk7CiAgICBsdkVsLnRleHRDb250ZW50ID0gcS5sdjsKICAgIGx2RWwuY2xhc3NOYW1lID0gJ2xldmVsLXBpbGwgcGlsbC0nK3EubHYudG9Mb3dlckNhc2UoKTsKICAgICQoJ2N3Yi1xLXR5cGUnKS50ZXh0Q29udGVudCA9IHEudHA7CiAgICAkKCdjd2ItcS10ZXh0JykuaW5uZXJIVE1MID0gcS50eDsKICAgIHZhciB3cmFwID0gJCgnY3diLXEtb3B0cycpOwogICAgd3JhcC5pbm5lckhUTUwgPSAnJzsKICAgIHEub3AuZm9yRWFjaChmdW5jdGlvbihvLGlkeCl7CiAgICAgIHZhciBidG4gPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdidXR0b24nKTsKICAgICAgYnRuLmNsYXNzTmFtZSA9ICdvcHQnKyhhbnN3ZXJzW2ldPT09aWR4Pycgc2VsZWN0ZWQnOicnKTsKICAgICAgYnRuLmlubmVySFRNTCA9IG87CiAgICAgIGJ0bi5vbmNsaWNrID0gZnVuY3Rpb24oKXsgcGljayhpZHgpOyB9OwogICAgICB3cmFwLmFwcGVuZENoaWxkKGJ0bik7CiAgICB9KTsKICAgIHZhciBuYiA9ICQoJ2N3Yi1idG4tbmV4dCcpOwogICAgbmIudGV4dENvbnRlbnQgPSBpPT09US5sZW5ndGgtMSA/ICdWZXIgbWlzIHJlc3VsdGFkb3Mg4oaSJyA6ICdTaWd1aWVudGUgcHJlZ3VudGEg4oaSJzsKICAgIGlmIChhbnN3ZXJzW2ldIT09bnVsbCkgbmIuY2xhc3NMaXN0LmFkZCgnb24nKTsgZWxzZSBuYi5jbGFzc0xpc3QucmVtb3ZlKCdvbicpOwogICAgJCgnY3diLWJ0bi1iYWNrJykuc3R5bGUuZGlzcGxheSA9IGk+MCA/ICdibG9jaycgOiAnbm9uZSc7CiAgfQoKICBmdW5jdGlvbiBwaWNrKGlkeCl7CiAgICBhbnN3ZXJzW2N1cl0gPSBpZHg7CiAgICB2YXIgb3B0cyA9IHJvb3QucXVlcnlTZWxlY3RvckFsbCgnLm9wdCcpOwogICAgZm9yICh2YXIgaT0wO2k8b3B0cy5sZW5ndGg7aSsrKSBvcHRzW2ldLmNsYXNzTGlzdC5yZW1vdmUoJ3NlbGVjdGVkJyk7CiAgICBvcHRzW2lkeF0uY2xhc3NMaXN0LmFkZCgnc2VsZWN0ZWQnKTsKICAgICQoJ2N3Yi1idG4tbmV4dCcpLmNsYXNzTGlzdC5hZGQoJ29uJyk7CiAgfQoKICBmdW5jdGlvbiBuZXh0KCl7CiAgICBpZiAoYW5zd2Vyc1tjdXJdPT09bnVsbCkgcmV0dXJuOwogICAgaWYgKGN1ciA8IFEubGVuZ3RoLTEpIGxvYWRRKGN1cisxKTsgZWxzZSBzaG93UmVzdWx0cygpOwogIH0KICBmdW5jdGlvbiBwcmV2KCl7IGlmIChjdXI+MCkgbG9hZFEoY3VyLTEpOyB9CgogICQoJ2N3Yi1zdGFydC1idG4nKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIHN0YXJ0KTsKICAkKCdjd2ItYnRuLW5leHQnKS5hZGRFdmVudExpc3RlbmVyKCdjbGljaycsIG5leHQpOwogICQoJ2N3Yi1idG4tYmFjaycpLmFkZEV2ZW50TGlzdGVuZXIoJ2NsaWNrJywgcHJldik7CgogIC8vIExldmVsIGlzIGRlY2lkZWQgYmxvY2sgYnkgYmxvY2ssIG5vdCBieSByYXcgdG90YWwgc2NvcmU6IGEgc3R1ZGVudCBtdXN0CiAgLy8gY2xlYXIgdGhlIHBhc3MgdGhyZXNob2xkIGZvciB0aGVpciBvd24gbGV2ZWwncyBxdWVzdGlvbnMgKGFuZCBldmVyeQogIC8vIGxldmVsIGJlbG93IGl0KSB0byBiZSBjcmVkaXRlZCB3aXRoIHRoYXQgbGV2ZWwuIEV2ZXJ5IGxldmVsIGhhcyA1CiAgLy8gcXVlc3Rpb25zLCBzbyBhIHNpbmdsZSB1bmlmb3JtIHRocmVzaG9sZCAoNC81ID0gODAlKSBhcHBsaWVzIHRvIGFsbC4KICB2YXIgTEVWRUxfT1JERVIgICAgPSBbJ0ExJywnQTInLCdCMScsJ0IyJywnQzEnLCdDMiddOwogIHZhciBQQVNTX1RIUkVTSE9MRCA9IDAuODsKCiAgZnVuY3Rpb24gY29tcHV0ZUxldmVsKCl7CiAgICB2YXIgc3RhdHMgPSB7fTsKICAgIFEuZm9yRWFjaChmdW5jdGlvbihxLCBpKXsKICAgICAgaWYgKCFzdGF0c1txLmx2XSkgc3RhdHNbcS5sdl0gPSB7IGNvcnJlY3Q6MCwgdG90YWw6MCB9OwogICAgICBzdGF0c1txLmx2XS50b3RhbCsrOwogICAgICBpZiAoYW5zd2Vyc1tpXSA9PT0gcS5vaykgc3RhdHNbcS5sdl0uY29ycmVjdCsrOwogICAgfSk7CiAgICB2YXIgYWNoaWV2ZWQgPSAneic7CiAgICBmb3IgKHZhciBpPTA7aTxMRVZFTF9PUkRFUi5sZW5ndGg7aSsrKXsKICAgICAgdmFyIHN0ID0gc3RhdHNbTEVWRUxfT1JERVJbaV1dOwogICAgICBpZiAoIXN0IHx8IHN0LmNvcnJlY3Qvc3QudG90YWwgPCBQQVNTX1RIUkVTSE9MRCkgYnJlYWs7CiAgICAgIGFjaGlldmVkID0gTEVWRUxfT1JERVJbaV0udG9Mb3dlckNhc2UoKTsKICAgIH0KICAgIHJldHVybiBhY2hpZXZlZDsKICB9CgogIC8qIENvbnZpZXJ0ZSBIVE1MIGRlIHVuYSBwcmVndW50YS9vcGNpw7NuIGVuIHRleHRvIHBsYW5vIGxlZ2libGUgKi8KICBmdW5jdGlvbiBwbGFpbihodG1sKXsKICAgIHZhciBkID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnZGl2Jyk7CiAgICBkLmlubmVySFRNTCA9IFN0cmluZyhodG1sKTsKICAgIHJldHVybiAoZC50ZXh0Q29udGVudCB8fCAnJykudHJpbSgpOwogIH0KCiAgLyogRGV0YWxsZSBkZSBjYWRhIHJlc3B1ZXN0YSAocGFyYSB2ZXIgcXXDqSBlbGlnacOzIGxhIHBlcnNvbmEgZW4gY2FkYSBwcmVndW50YSkgKi8KICBmdW5jdGlvbiBidWlsZERldGFpbCgpewogICAgcmV0dXJuIFEubWFwKGZ1bmN0aW9uKHEsIGkpewogICAgICB2YXIgc2VsID0gYW5zd2Vyc1tpXTsKICAgICAgcmV0dXJuIHsKICAgICAgICBuOiAgICAgICAgICBpICsgMSwKICAgICAgICBuaXZlbGw6ICAgICBxLmx2LAogICAgICAgIHByZWd1bnRhOiAgIHBsYWluKHEudHgpLAogICAgICAgIHJlc3Bvc3RhOiAgIHNlbCAhPSBudWxsID8gcGxhaW4ocS5vcFtzZWxdKSA6ICcoc2Vuc2UgcmVzcG9zdGEpJywKICAgICAgICBjb3JyZWN0YTogICBwbGFpbihxLm9wW3Eub2tdKSwKICAgICAgICBlbmNlcnRhZGE6ICBzZWwgPT09IHEub2sKICAgICAgfTsKICAgIH0pOwogIH0KCiAgLyogUmVzdW1lbiBkZSBhY2llcnRvcyBwb3IgdHJhbW8vbml2ZWwgKGV4OiB7QTE6IjUvNSIsIEEyOiIzLzUiLCAuLi59KSAqLwogIGZ1bmN0aW9uIGJ1aWxkQnlMZXZlbCgpewogICAgdmFyIGJ5ID0ge307CiAgICBbJ0ExJywnQTInLCdCMScsJ0IyJywnQzEnLCdDMiddLmZvckVhY2goZnVuY3Rpb24obHYpewogICAgICB2YXIgdG90ID0gMCwgb2sgPSAwOwogICAgICBRLmZvckVhY2goZnVuY3Rpb24ocSwgaSl7CiAgICAgICAgaWYgKHEubHYgIT09IGx2KSByZXR1cm47CiAgICAgICAgdG90Kys7CiAgICAgICAgaWYgKGFuc3dlcnNbaV0gPT09IHEub2spIG9rKys7CiAgICAgIH0pOwogICAgICBpZiAodG90KSBieVtsdl0gPSBvayArICcvJyArIHRvdDsKICAgIH0pOwogICAgcmV0dXJuIGJ5OwogIH0KCiAgLyog4pSA4pSAIEVudsOtYSBlbCBsZWFkIGEgU3VwYWJhc2UgKG5vIGJsb3F1ZWEgbGEgcGFudGFsbGEgZGUgcmVzdWx0YWRvcykg4pSA4pSAICovCiAgZnVuY3Rpb24gc2F2ZUxlYWQocHRzLCBrZXksIHIpewogICAgaWYgKHNhdmVkKSByZXR1cm47CiAgICBpZiAoIVNVUEFCQVNFX1VSTCB8fCBTVVBBQkFTRV9VUkwuaW5kZXhPZignVFUtUFJPWUVDVE8nKSE9PS0xKSByZXR1cm47IC8vIGHDum4gc2luIGNvbmZpZ3VyYXIKICAgIHNhdmVkID0gdHJ1ZTsKICAgIHZhciBwYXlsb2FkID0gewogICAgICBuYW1lOiAgICAgIHVzZXIubmFtZSwKICAgICAgZW1haWw6ICAgICB1c2VyLmVtYWlsLAogICAgICBsZXZlbF9rZXk6IGtleSwKICAgICAgbGV2ZWw6ICAgICByLmJhZGdlLAogICAgICBzY29yZTogICAgIHB0cywKICAgICAgdG90YWw6ICAgICBRLmxlbmd0aCwKICAgICAgYnlfbGV2ZWw6ICBidWlsZEJ5TGV2ZWwoKSwKICAgICAgYW5zd2VyczogICBidWlsZERldGFpbCgpLAogICAgICBwYWdlX3VybDogIHdpbmRvdy5sb2NhdGlvbi5ocmVmCiAgICB9OwogICAgZmV0Y2goU1VQQUJBU0VfVVJMICsgJy9yZXN0L3YxL2xlYWRzJywgewogICAgICBtZXRob2Q6J1BPU1QnLAogICAgICBoZWFkZXJzOnsKICAgICAgICAnQ29udGVudC1UeXBlJzonYXBwbGljYXRpb24vanNvbicsCiAgICAgICAgJ2FwaWtleSc6IFNVUEFCQVNFX0FOT05fS0VZLAogICAgICAgICdBdXRob3JpemF0aW9uJzonQmVhcmVyICcrU1VQQUJBU0VfQU5PTl9LRVksCiAgICAgICAgJ1ByZWZlcic6J3JldHVybj1taW5pbWFsJwogICAgICB9LAogICAgICBib2R5OiBKU09OLnN0cmluZ2lmeShwYXlsb2FkKQogICAgfSkuY2F0Y2goZnVuY3Rpb24oZXJyKXsgc2F2ZWQ9ZmFsc2U7IGNvbnNvbGUuZXJyb3IoJ0NXQiDCtyBTdXBhYmFzZSBlcnJvcjonLCBlcnIpOyB9KTsKICB9CgogIGZ1bmN0aW9uIHNob3dSZXN1bHRzKCl7CiAgICB2YXIgcHRzID0gYW5zd2Vycy5yZWR1Y2UoZnVuY3Rpb24oYWNjLGFucyxpKXsgcmV0dXJuIGFjYysoYW5zPT09UVtpXS5vaz8xOjApOyB9LDApOwogICAgdmFyIGtleSA9IGNvbXB1dGVMZXZlbCgpOwogICAgdmFyIHIgPSBSW2tleV07CiAgICAkKCdjd2Itci1iYWRnZScpLnRleHRDb250ZW50ID0gci5iYWRnZTsKICAgICQoJ2N3Yi1yLXRpdGxlJykudGV4dENvbnRlbnQgPSByLnRpdGxlOwogICAgJCgnY3diLXItc2NvcmUnKS50ZXh0Q29udGVudCA9ICdQdW50dWFjacOzbjogJytwdHMrJyAvICcrUS5sZW5ndGg7CiAgICAkKCdjd2Itci1kZXNjJykudGV4dENvbnRlbnQgPSByLmRlc2M7CiAgICAkKCdjd2Itci1uZXh0JykudGV4dENvbnRlbnQgPSByLm5leHQ7CiAgICB2YXIgcGlwc0VsID0gJCgnY3diLXItcGlwcycpOwogICAgcGlwc0VsLmlubmVySFRNTCA9ICcnOwogICAgZm9yICh2YXIgaT0wO2k8NjtpKyspewogICAgICB2YXIgZCA9IGRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoJ2RpdicpOwogICAgICBkLmNsYXNzTmFtZSA9ICdwaXAnKyhpPHIucGlwcz8nIG9uJzonJyk7CiAgICAgIHBpcHNFbC5hcHBlbmRDaGlsZChkKTsKICAgIH0KICAgIHZhciBjdGFCdG4gPSAkKCdjd2Itci1jdGEnKTsKICAgIGlmIChrZXk9PT0nYzInKXsKICAgICAgY3RhQnRuLnRleHRDb250ZW50ID0gJ0NvbnRhY3RhIGRpcmVjdGFtZW50ZSBjb24gQmV0IOKGkic7CiAgICAgIGN0YUJ0bi5ocmVmID0gJ21haWx0bzpiZXRAY2F0YWxhbndpdGhiZXQuY29tP3N1YmplY3Q9Q29uc3VsdGElMjBuaXZlbCUyMEMyJTIwY2F0YWzDoW4mYm9keT1Ib2xhJTIwQmV0JTJDJTIwYWNhYm8lMjBkZSUyMGhhY2VyJTIwbGElMjBwcnVlYmElMjBkZSUyMG5pdmVsJTIwZGUlMjBjYXRhbMOhbiUyMHklMjBoZSUyMG9idGVuaWRvJTIwQzIuJzsKICAgIH0gZWxzZSB7CiAgICAgIGN0YUJ0bi50ZXh0Q29udGVudCA9ICdSZXNlcnZhIHkgcGFnYSB0dSBwcmltZXJhIGNsYXNlIGNvbiBCZXQg4oaSJzsKICAgICAgY3RhQnRuLmhyZWYgPSBDTEFTU0VTX1VSTDsKICAgIH0KICAgIHNhdmVMZWFkKHB0cywga2V5LCByKTsKICAgIHNob3coJ2N3Yi1zLXJlc3VsdHMnKTsKICB9CgogIC8vIFdvcmRQcmVzcyAoSmV0cGFjaykgaW5qZWN0cyBhICJkb24ndCBmb3JnZXQgdG8gc3Vic2NyaWJlIiBub3RlIHRoYXQgaXNuJ3QKICAvLyBwYXJ0IG9mIHRoaXMgcGFnZTsgcmVtb3ZlIGl0LCBpbmNsdWRpbmcgaWYgaXQncyBhZGRlZCBhZnRlciBsb2FkLgogIGZ1bmN0aW9uIHJlbW92ZUluamVjdGVkU3Vic2NyaWJlKCl7CiAgICB2YXIgd2Fsa2VyID0gZG9jdW1lbnQuY3JlYXRlVHJlZVdhbGtlcihkb2N1bWVudC5ib2R5LCBOb2RlRmlsdGVyLlNIT1dfVEVYVCk7CiAgICB2YXIgaGl0cyA9IFtdOwogICAgd2hpbGUgKHdhbGtlci5uZXh0Tm9kZSgpKXsKICAgICAgaWYgKC9mb3JnZXQgdG8gc3Vic2NyaWJlL2kudGVzdCh3YWxrZXIuY3VycmVudE5vZGUubm9kZVZhbHVlKSkgaGl0cy5wdXNoKHdhbGtlci5jdXJyZW50Tm9kZSk7CiAgICB9CiAgICBoaXRzLmZvckVhY2goZnVuY3Rpb24obm9kZSl7CiAgICAgIC8vIERyb3AgdGhlIHdyYXBwZXIgb25seSB3aGVuIGl0IGhvbGRzIG5vdGhpbmcgYnV0IHRoaXMgbm90ZTsgb3RoZXJ3aXNlCiAgICAgIC8vIChlLmcuIHRoZSB0ZXh0IGxhbmRzIGluc2lkZSB0aGUgaW50cm8pIHJlbW92ZSBqdXN0IHRoZSB0ZXh0LgogICAgICB2YXIgZWwgPSBub2RlLnBhcmVudEVsZW1lbnQ7CiAgICAgIGlmIChlbCAmJiBlbCAhPT0gZG9jdW1lbnQuYm9keSAmJiBlbC50ZXh0Q29udGVudC50cmltKCkgPT09IG5vZGUubm9kZVZhbHVlLnRyaW0oKSkgZWwucmVtb3ZlKCk7CiAgICAgIGVsc2Ugbm9kZS5yZW1vdmUoKTsKICAgIH0pOwogIH0KICByZW1vdmVJbmplY3RlZFN1YnNjcmliZSgpOwogIGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCByZW1vdmVJbmplY3RlZFN1YnNjcmliZSk7CiAgbmV3IE11dGF0aW9uT2JzZXJ2ZXIocmVtb3ZlSW5qZWN0ZWRTdWJzY3JpYmUpLm9ic2VydmUoZG9jdW1lbnQuYm9keSwgeyBjaGlsZExpc3Q6dHJ1ZSwgc3VidHJlZTp0cnVlIH0pOwp9KSgpOwo=">new Function(decodeURIComponent(escape(atob(document.currentScript.dataset.cwbJs))))()</script>
+<script data-cwb-js="(function(){
+  // Work only inside this block, so another copy of the test on the same
+  // page (e.g. an old block left behind) can't steal its inputs or buttons.
+  // Fallback for optimisation plugins that move inline scripts elsewhere.
+  var me = document.currentScript;
+  var root = (me &amp;&amp; me.closest &amp;&amp; me.closest('[id=&quot;cwb-test-app&quot;]')) || (function(){
+    var apps = document.querySelectorAll('[id=&quot;cwb-test-app&quot;]');
+    return apps[apps.length-1];
+  })();
+  /* ══════════════════════════════════════════════
+     CONFIG · RELLENA ESTOS 2 VALORES DE SUPABASE
+     ══════════════════════════════════════════════ */
+  var SUPABASE_URL      = 'https://nergtufwnayhocadylub.supabase.co'; // ← proyecto CATALANWITHBET ✓
+  var SUPABASE_ANON_KEY = 'sb_publishable_jJhQrE7vm10_2X_4XJHgnw_-VtLExnI'; // ← clave publishable ✓
+
+  // Página de tarifas donde el cliente paga la sesión (CTA final del test)
+  var CLASSES_URL       = 'https://www.catalanwithbet.com/classes/#tarifes';
+  /* ══════════════════════════════════════════════ */
+
+  // 30 preguntas — 5 por nivel MCER
+  var Q = [
+    // ─── A1 (1-5) ───────────────────────────────
+    {lv:'A1',tp:'Opción múltiple',tx:'¿Cuál es la traducción correcta de &lt;span class=&quot;ca&quot;&gt;&quot;Buenos días&quot;&lt;/span&gt; en catalán?',op:['Bona nit','Bona tarda','Bon dia','Adéu'],ok:2},
+    {lv:'A1',tp:'Elige la palabra correcta',tx:'¿Cómo se dice &lt;span class=&quot;ca&quot;&gt;&quot;mesa&quot;&lt;/span&gt; en catalán?',op:['Mesa','Taula','Cadira','Porta'],ok:1},
+    {lv:'A1',tp:'Rellena el hueco',tx:'Em &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; Anna. &lt;span class=&quot;hint&quot;&gt;(Me llamo Anna.)&lt;/span&gt;',op:['dic','diu','dius','dir'],ok:0},
+    {lv:'A1',tp:'Opción múltiple',tx:'¿Qué significa &lt;span class=&quot;ca&quot;&gt;&quot;Gràcies&quot;&lt;/span&gt;?',op:['Por favor','De nada','Gracias','Perdón'],ok:2},
+    {lv:'A1',tp:'Opción múltiple',tx:'¿Cómo se dice &lt;span class=&quot;ca&quot;&gt;&quot;el agua&quot;&lt;/span&gt; en catalán?',op:['el aigua','la aigua',&quot;l'aigua&quot;,'lo aigua'],ok:2},
+
+    // ─── A2 (6-10) ──────────────────────────────
+    {lv:'A2',tp:'Rellena el hueco',tx:'&lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; molt contenta. &lt;span class=&quot;hint&quot;&gt;(Estoy muy contenta.)&lt;/span&gt;',op:['Soc','Estic','Estàs','Som'],ok:1},
+    {lv:'A2',tp:'Elige la palabra correcta',tx:'Visc &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; Barcelona.',op:['a','en','per','de'],ok:0},
+    {lv:'A2',tp:'Opción múltiple',tx:'¿Cómo se dice &lt;span class=&quot;ca&quot;&gt;&quot;Hay mucha gente&quot;&lt;/span&gt; en catalán?',op:['Ha molta gent','És molta gent','Hi ha molta gent','Té molta gent'],ok:2},
+    {lv:'A2',tp:'Rellena el hueco',tx:'Tinc &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; anys. &lt;span class=&quot;hint&quot;&gt;(Tengo 25 años.)&lt;/span&gt;',op:['vint-i-cinc','vinticinc','vint-i cinc','veint-i-cinc'],ok:0},
+    {lv:'A2',tp:'Rellena el hueco',tx:'&lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; treballar demà. &lt;span class=&quot;hint&quot;&gt;(Tengo que trabajar mañana.)&lt;/span&gt;',op:['Tinc que','He de','Hi ha que','Estic de'],ok:1},
+
+    // ─── B1 (11-15) ─────────────────────────────
+    {lv:'B1',tp:'Rellena el hueco',tx:'Ahir &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; al cinema. &lt;span class=&quot;hint&quot;&gt;(Ayer fui al cine.)&lt;/span&gt;',op:['vaig anar','va anar','vaig a anar','he anat'],ok:0},
+    {lv:'B1',tp:'Elige la palabra correcta',tx:'Has vist la pel·lícula? Sí, ja &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; vista.',op:['la he',&quot;l'he&quot;,'li he','ho he'],ok:1},
+    {lv:'B1',tp:'Opción múltiple',tx:'¿Cuál es la forma correcta? &lt;span class=&quot;hint&quot;&gt;(Hace dos años que vivo aquí.)&lt;/span&gt;',op:['Fa dos anys que visc aquí','Fa dos anys que vivo aquí','Hi ha dos anys que visc aquí','Fa dos anys que vius aquí'],ok:0},
+    {lv:'B1',tp:'Rellena el hueco',tx:'No &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; vaig veure ahir. &lt;span class=&quot;hint&quot;&gt;(No los vi ayer.)&lt;/span&gt;',op:['los','els','les','ho'],ok:1},
+    {lv:'B1',tp:'Rellena el hueco',tx:'Tens pa? No, no &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; tinc. &lt;span class=&quot;hint&quot;&gt;(¿Tienes pan? No, no tengo.)&lt;/span&gt;',op:['ho','el','en','hi'],ok:2},
+
+    // ─── B2 (16-20) ─────────────────────────────
+    {lv:'B2',tp:'Elige la palabra correcta',tx:'Aquesta és la noia &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; treballa amb mi.',op:['que el seu pare','el pare de la qual','que el pare','on el pare'],ok:1},
+    {lv:'B2',tp:'Rellena el hueco',tx:'Vull que &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; a la festa. &lt;span class=&quot;hint&quot;&gt;(Quiero que vengas.)&lt;/span&gt;',op:['vens','vindràs','vinguis','venies'],ok:2},
+    {lv:'B2',tp:'Elige la palabra correcta',tx:'Vas donar el llibre a la Maria? Sí, &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; vaig donar. &lt;span class=&quot;hint&quot;&gt;(Sí, se lo di.)&lt;/span&gt;',op:[&quot;li'l&quot;,&quot;se'l&quot;,&quot;l'hi&quot;,'li ho'],ok:2},
+    {lv:'B2',tp:'Opción múltiple',tx:`¿Qué significa &lt;span class=&quot;ca&quot;&gt;&quot;No m'agrada gens&quot;&lt;/span&gt;?`,op:['No me gusta la gente','No me gusta mucho','No me gusta nada','No me gusta a veces'],ok:2},
+    {lv:'B2',tp:'Rellena el hueco',tx:`Si hagués estudiat més, &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; l'examen.`,op:['hauria aprovat','havia aprovat','aprovo','aprovaré'],ok:0},
+
+    // ─── C1 (21-25) ─────────────────────────────
+    {lv:'C1',tp:'Elige la palabra correcta',tx:'No ho he fet jo, &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; el meu germà.',op:['si no','sinó','sino','si bé'],ok:1},
+    {lv:'C1',tp:'Opción múltiple',tx:'¿Cuál es la frase gramaticalmente correcta?',op:['Cal que tothom porti la documentació','Cal que tothom porta la documentació','Cal que tothom portarà la documentació','Cal tothom porti la documentació'],ok:0},
+    {lv:'C1',tp:'Elige la palabra correcta',tx:'Estic segur &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; vindrà.',op:['de que','que','de què','del que'],ok:1},
+    {lv:'C1',tp:'Elige la palabra correcta',tx:'Quants llibres hi ha a la taula? &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; tres.',op:['Hi ha',&quot;N'hi ha&quot;,&quot;Hi n'ha&quot;,'En ha'],ok:1},
+    {lv:'C1',tp:'Rellena el hueco',tx:'No contesta al telèfon; &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt; estar dormint.',op:['deu','deu de','té que','hi ha que'],ok:0},
+
+    // ─── C2 (26-30) ─────────────────────────────
+    {lv:'C2',tp:'Identifica el error',tx:'Identifica la frase con un error gramatical:',op:['Malgrat que plogués, van sortir igualment.','Tot i el mal temps, van anar a la platja.','Degut a que treballava tard, no els veia.','Com que feia fred, es van quedar a casa.'],ok:2},
+    {lv:'C2',tp:'Elige la palabra correcta',tx:'«El projecte estava ben planificat; &lt;span class=&quot;bl&quot;&gt;___&lt;/span&gt;, no va superar la revisió.»',op:['per tant','tanmateix','a més a més','ja que'],ok:1},
+    {lv:'C2',tp:'Opción múltiple',tx:'¿Qué expresión es genuinamente catalana (no un calco del castellano)?',op:['Disfrutar','Enyorar','Extranyar','Donar-se compte'],ok:1},
+    {lv:'C2',tp:'Opción múltiple',tx:'¿Qué significa &lt;span class=&quot;ca&quot;&gt;&quot;Plou a bots i barrals&quot;&lt;/span&gt;?',op:['Llueve un poco','Llueve a cántaros','Hace mucho viento','Hay tormenta eléctrica'],ok:1},
+    {lv:'C2',tp:'Opción múltiple',tx:'¿Qué significa &lt;span class=&quot;ca&quot;&gt;&quot;Et faig cinc cèntims de la reunió&quot;&lt;/span&gt;?',op:['Te pago cinco céntimos por la reunión','Te resumo brevemente la reunión','Te cobro poco por la reunión','Te cuento los detalles más caros de la reunión'],ok:1}
+  ];
+
+  var R = {
+    z:{badge:'Principiante',title:'¡Empezamos desde cero — y es perfectamente normal!',desc:'Tienes pocos o ningún conocimiento previo de catalán. Pero como castellanohablante partes con una gran ventaja: compartís muchísimo vocabulario y estructuras. Con el método adecuado, avanzarás mucho más rápido de lo que crees.',next:'Las clases de Bet para principiantes están pensadas exactamente para ti — sin ningún requisito previo. Empezamos desde el principio y construimos una base sólida juntos, aprovechando lo que ya sabes del castellano.',pips:0},
+    a1:{badge:'A1 — Básico',title:'¡Ya sabes un poco de catalán!',desc:'Puedes entender y usar expresiones cotidianas muy básicas. Puedes presentarte e interactuar de forma sencilla. El reto ahora es no dejarte llevar por el castellano: hay estructuras que parecen iguales pero no lo son.',next:'En este nivel, Bet te ayudará a construir bases sólidas: pronunciación, gramática básica y los puntos donde el catalán se separa del castellano. ¡Vamos a por ello!',pips:1},
+    a2:{badge:'A2 — Elemental',title:'Vas por buen camino — ¡buen progreso!',desc:'Puedes entender frases sobre temas cotidianos e intercambiar información básica. Ya te comunicas, pero algunos tiempos verbales, pronombres débiles (en, hi) y falsos amigos aún necesitan trabajo.',next:'En A2, Bet consolidará tu gramática, ampliará tu vocabulario y trabajará contigo esos detalles que marcan la diferencia entre &quot;traducir del castellano&quot; y &quot;hablar catalán&quot;. ¡Seguimos!',pips:2},
+    b1:{badge:'B1 — Intermedio',title:'¡Ya te defiendes en catalán!',desc:'Puedes gestionar la mayoría de situaciones en un entorno catalanohablante. Describes experiencias, planes y opiniones. Los pronombres febles y algunos falsos amigos son ahora tu principal reto.',next:'En B1, Bet te ayudará a sonar más natural, a dominar los pronombres débiles (en, hi, els) y a construir el vocabulario para conversaciones reales. ¡Aquí es donde se pone interesante!',pips:3},
+    b2:{badge:'B2 — Intermedio alto',title:'¡Impresionante — hablas catalán muy bien!',desc:'Puedes entender textos complejos e interactuar con fluidez con hablantes nativos. Te acercas a la fluidez real. Ahora se trata de pulir el subjuntivo, las combinaciones de pronombres y evitar los calcos del castellano.',next:'En B2, las clases de Bet se centran en el matiz: gramática avanzada, expresiones genuinas, registro y estilo — y sentirte cómodo/a en cualquier situación en catalán.',pips:4},
+    c1:{badge:'C1 — Avanzado',title:'¡Muy impresionante — estás en un nivel avanzado!',desc:'Puedes expresar ideas con fluidez y espontaneidad. Usas el idioma de forma flexible para fines sociales y profesionales. Tus retos restantes son de estilo, precisión y profundidad cultural.',next:'En C1, Bet trabaja los detalles finos: matices sutiles, riqueza de vocabulario, expresiones idiomáticas y ese tipo de fluidez que te hace indistinguible de un hablante nativo.',pips:5},
+    c2:{badge:'C2 — Maestría',title:'Tu nivel ya supera mis cursos — ¡pero hablemos!',desc:'Tienes un dominio del catalán casi nativo: puedes expresarte con fluidez, precisión y espontaneidad en cualquier contexto. Mis clases llegan hasta el C1, pero si quieres perfeccionar aspectos muy específicos de estilo, registro avanzado o matices culturales, podemos hablar para encontrar la mejor opción para ti.',next:'Escríbeme directamente y valoramos juntos cómo sacar el máximo partido a tu catalán. Quizá no necesitas clases regulares, pero sí sesiones puntuales muy específicas.',pips:6}
+  };
+
+  var cur = 0;
+  var answers = new Array(Q.length).fill(null);
+  var user = { name:'', email:'' };
+  var saved = false;
+
+  function $(id){ return root.querySelector('#'+id); }
+  function show(id){
+    var scr = root.querySelectorAll('.screen');
+    for (var i=0;i&lt;scr.length;i++) scr[i].classList.remove('active');
+    $(id).classList.add('active');
+    root.scrollIntoView({behavior:'smooth',block:'start'});
+  }
+
+  function showErr(msg){ var e=$('cwb-form-err'); e.textContent=msg; e.classList.add('show'); }
+  function clearErr(){ $('cwb-form-err').classList.remove('show'); }
+  function mark(id,bad){ $(id).classList[bad?'add':'remove']('cwb-invalid'); }
+
+  // Written without backslashes: WordPress can strip them when saving the block.
+  function validEmail(v){ return /^[^ @]+@[^ @]+[.][^ @]{2,}$/.test(v); }
+
+  function start(){
+    clearErr();
+    var name  = $('cwb-u-name').value.trim();
+    var email = $('cwb-u-email').value.trim();
+    var okName=!!name, okEmail=validEmail(email);
+    mark('cwb-u-name',!okName); mark('cwb-u-email',!okEmail);
+
+    if (!okName || !okEmail){
+      showErr('Revisa tus datos: necesitamos un nombre y un email válido.');
+      return;
+    }
+    if (!$('cwb-u-consent').checked){
+      showErr('Por favor, acepta la política de privacidad para continuar.');
+      return;
+    }
+    user = { name:name, email:email };
+    show('cwb-s-test');
+    loadQ(0);
+  }
+
+  function loadQ(i){
+    cur = i;
+    var q = Q[i];
+    var pct = Math.max(Math.round((i/Q.length)*100),4);
+    $('cwb-p-fill').style.width = pct+'%';
+    $('cwb-p-label').textContent = 'Pregunta '+(i+1)+' de '+Q.length;
+    var lvEl = $('cwb-p-level');
+    lvEl.textContent = q.lv;
+    lvEl.className = 'level-pill pill-'+q.lv.toLowerCase();
+    $('cwb-q-type').textContent = q.tp;
+    $('cwb-q-text').innerHTML = q.tx;
+    var wrap = $('cwb-q-opts');
+    wrap.innerHTML = '';
+    q.op.forEach(function(o,idx){
+      var btn = document.createElement('button');
+      btn.className = 'opt'+(answers[i]===idx?' selected':'');
+      btn.innerHTML = o;
+      btn.onclick = function(){ pick(idx); };
+      wrap.appendChild(btn);
+    });
+    var nb = $('cwb-btn-next');
+    nb.textContent = i===Q.length-1 ? 'Ver mis resultados →' : 'Siguiente pregunta →';
+    if (answers[i]!==null) nb.classList.add('on'); else nb.classList.remove('on');
+    $('cwb-btn-back').style.display = i&gt;0 ? 'block' : 'none';
+  }
+
+  function pick(idx){
+    answers[cur] = idx;
+    var opts = root.querySelectorAll('.opt');
+    for (var i=0;i&lt;opts.length;i++) opts[i].classList.remove('selected');
+    opts[idx].classList.add('selected');
+    $('cwb-btn-next').classList.add('on');
+  }
+
+  function next(){
+    if (answers[cur]===null) return;
+    if (cur &lt; Q.length-1) loadQ(cur+1); else showResults();
+  }
+  function prev(){ if (cur&gt;0) loadQ(cur-1); }
+
+  $('cwb-start-btn').addEventListener('click', start);
+  $('cwb-btn-next').addEventListener('click', next);
+  $('cwb-btn-back').addEventListener('click', prev);
+
+  // Level is decided block by block, not by raw total score: a student must
+  // clear the pass threshold for their own level's questions (and every
+  // level below it) to be credited with that level. Every level has 5
+  // questions, so a single uniform threshold (4/5 = 80%) applies to all.
+  var LEVEL_ORDER    = ['A1','A2','B1','B2','C1','C2'];
+  var PASS_THRESHOLD = 0.8;
+
+  function computeLevel(){
+    var stats = {};
+    Q.forEach(function(q, i){
+      if (!stats[q.lv]) stats[q.lv] = { correct:0, total:0 };
+      stats[q.lv].total++;
+      if (answers[i] === q.ok) stats[q.lv].correct++;
+    });
+    var achieved = 'z';
+    for (var i=0;i&lt;LEVEL_ORDER.length;i++){
+      var st = stats[LEVEL_ORDER[i]];
+      if (!st || st.correct/st.total &lt; PASS_THRESHOLD) break;
+      achieved = LEVEL_ORDER[i].toLowerCase();
+    }
+    return achieved;
+  }
+
+  /* Convierte HTML de una pregunta/opción en texto plano legible */
+  function plain(html){
+    var d = document.createElement('div');
+    d.innerHTML = String(html);
+    return (d.textContent || '').trim();
+  }
+
+  /* Detalle de cada respuesta (para ver qué eligió la persona en cada pregunta) */
+  function buildDetail(){
+    return Q.map(function(q, i){
+      var sel = answers[i];
+      return {
+        n:          i + 1,
+        nivell:     q.lv,
+        pregunta:   plain(q.tx),
+        resposta:   sel != null ? plain(q.op[sel]) : '(sense resposta)',
+        correcta:   plain(q.op[q.ok]),
+        encertada:  sel === q.ok
+      };
+    });
+  }
+
+  /* Resumen de aciertos por tramo/nivel (ex: {A1:&quot;5/5&quot;, A2:&quot;3/5&quot;, ...}) */
+  function buildByLevel(){
+    var by = {};
+    ['A1','A2','B1','B2','C1','C2'].forEach(function(lv){
+      var tot = 0, ok = 0;
+      Q.forEach(function(q, i){
+        if (q.lv !== lv) return;
+        tot++;
+        if (answers[i] === q.ok) ok++;
+      });
+      if (tot) by[lv] = ok + '/' + tot;
+    });
+    return by;
+  }
+
+  /* ── Envía el lead a Supabase (no bloquea la pantalla de resultados) ── */
+  function saveLead(pts, key, r){
+    if (saved) return;
+    if (!SUPABASE_URL || SUPABASE_URL.indexOf('TU-PROYECTO')!==-1) return; // aún sin configurar
+    saved = true;
+    var payload = {
+      name:      user.name,
+      email:     user.email,
+      level_key: key,
+      level:     r.badge,
+      score:     pts,
+      total:     Q.length,
+      by_level:  buildByLevel(),
+      answers:   buildDetail(),
+      page_url:  window.location.href
+    };
+    fetch(SUPABASE_URL + '/rest/v1/leads', {
+      method:'POST',
+      headers:{
+        'Content-Type':'application/json',
+        'apikey': SUPABASE_ANON_KEY,
+        'Authorization':'Bearer '+SUPABASE_ANON_KEY,
+        'Prefer':'return=minimal'
+      },
+      body: JSON.stringify(payload)
+    }).catch(function(err){ saved=false; console.error('CWB · Supabase error:', err); });
+  }
+
+  function showResults(){
+    var pts = answers.reduce(function(acc,ans,i){ return acc+(ans===Q[i].ok?1:0); },0);
+    var key = computeLevel();
+    var r = R[key];
+    $('cwb-r-badge').textContent = r.badge;
+    $('cwb-r-title').textContent = r.title;
+    $('cwb-r-score').textContent = 'Puntuación: '+pts+' / '+Q.length;
+    $('cwb-r-desc').textContent = r.desc;
+    $('cwb-r-next').textContent = r.next;
+    var pipsEl = $('cwb-r-pips');
+    pipsEl.innerHTML = '';
+    for (var i=0;i&lt;6;i++){
+      var d = document.createElement('div');
+      d.className = 'pip'+(i&lt;r.pips?' on':'');
+      pipsEl.appendChild(d);
+    }
+    var ctaBtn = $('cwb-r-cta');
+    if (key==='c2'){
+      ctaBtn.textContent = 'Contacta directamente con Bet →';
+      ctaBtn.href = 'mailto:bet@catalanwithbet.com?subject=Consulta%20nivel%20C2%20catalán&amp;body=Hola%20Bet%2C%20acabo%20de%20hacer%20la%20prueba%20de%20nivel%20de%20catalán%20y%20he%20obtenido%20C2.';
+    } else {
+      ctaBtn.textContent = 'Reserva y paga tu primera clase con Bet →';
+      ctaBtn.href = CLASSES_URL;
+    }
+    saveLead(pts, key, r);
+    show('cwb-s-results');
+  }
+
+  // WordPress (Jetpack) injects a &quot;don't forget to subscribe&quot; note that isn't
+  // part of this page; remove it, including if it's added after load.
+  function removeInjectedSubscribe(){
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+    var hits = [];
+    while (walker.nextNode()){
+      if (/forget to subscribe/i.test(walker.currentNode.nodeValue)) hits.push(walker.currentNode);
+    }
+    hits.forEach(function(node){
+      // Drop the wrapper only when it holds nothing but this note; otherwise
+      // (e.g. the text lands inside the intro) remove just the text.
+      var el = node.parentElement;
+      if (el &amp;&amp; el !== document.body &amp;&amp; el.textContent.trim() === node.nodeValue.trim()) el.remove();
+      else node.remove();
+    });
+  }
+  removeInjectedSubscribe();
+  document.addEventListener('DOMContentLoaded', removeInjectedSubscribe);
+  new MutationObserver(removeInjectedSubscribe).observe(document.body, { childList:true, subtree:true });
+})();
+">new Function(document.currentScript.dataset.cwbJs)()</script>
 </div>
