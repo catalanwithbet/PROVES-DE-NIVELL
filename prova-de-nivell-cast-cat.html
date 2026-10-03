@@ -240,10 +240,6 @@
         <label for="cwb-u-email">Tu email *</label>
         <input type="email" id="cwb-u-email" placeholder="ana@email.com" autocomplete="email" inputmode="email">
       </div>
-      <div class="field">
-        <label for="cwb-u-phone">Teléfono / WhatsApp *</label>
-        <input type="tel" id="cwb-u-phone" placeholder="+34 600 000 000" autocomplete="tel" inputmode="tel">
-      </div>
       <div class="consent">
         <input type="checkbox" id="cwb-u-consent">
         <label for="cwb-u-consent">Acepto que CatalanWithBet guarde mis datos para contactarme sobre las clases. Ver la <a href="https://www.catalanwithbet.com/privacitat/" target="_blank" rel="noopener">política de privacidad</a>.</label>
@@ -361,7 +357,7 @@
 
   var cur = 0;
   var answers = new Array(Q.length).fill(null);
-  var user = { name:'', email:'', phone:'' };
+  var user = { name:'', email:'' };
   var saved = false;
 
   function $(id){ return document.getElementById(id); }
@@ -377,25 +373,23 @@
   function mark(id,bad){ $(id).classList[bad?'add':'remove']('cwb-invalid'); }
 
   function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
-  function validPhone(v){ var d=v.replace(/[^0-9]/g,''); return d.length>=7 && d.length<=15; }
 
   window.cwbStart = function(){
     clearErr();
     var name  = $('cwb-u-name').value.trim();
     var email = $('cwb-u-email').value.trim();
-    var phone = $('cwb-u-phone').value.trim();
-    var okName=!!name, okEmail=validEmail(email), okPhone=validPhone(phone);
-    mark('cwb-u-name',!okName); mark('cwb-u-email',!okEmail); mark('cwb-u-phone',!okPhone);
+    var okName=!!name, okEmail=validEmail(email);
+    mark('cwb-u-name',!okName); mark('cwb-u-email',!okEmail);
 
-    if (!okName || !okEmail || !okPhone){
-      showErr('Revisa tus datos: necesitamos un nombre, un email válido y un teléfono correcto.');
+    if (!okName || !okEmail){
+      showErr('Revisa tus datos: necesitamos un nombre y un email válido.');
       return;
     }
     if (!$('cwb-u-consent').checked){
       showErr('Por favor, acepta la política de privacidad para continuar.');
       return;
     }
-    user = { name:name, email:email, phone:phone };
+    user = { name:name, email:email };
     show('cwb-s-test');
     loadQ(0);
   };
@@ -508,7 +502,6 @@
     var payload = {
       name:      user.name,
       email:     user.email,
-      phone:     user.phone,
       level_key: key,
       level:     r.badge,
       score:     pts,
