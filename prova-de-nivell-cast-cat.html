@@ -327,8 +327,8 @@
     {lv:'B2',tp:'Elige la palabra correcta',tx:'Aquesta és la noia <span class="bl">___</span> treballa amb mi.',op:['que el seu pare','el pare de la qual','que el pare','on el pare'],ok:1},
     {lv:'B2',tp:'Rellena el hueco',tx:'Vull que <span class="bl">___</span> a la festa. <span class="hint">(Quiero que vengas.)</span>',op:['vens','vindràs','vinguis','venies'],ok:2},
     {lv:'B2',tp:'Elige la palabra correcta',tx:'Vas donar el llibre a la Maria? Sí, <span class="bl">___</span> vaig donar. <span class="hint">(Sí, se lo di.)</span>',op:["li'l","se'l","l'hi",'li ho'],ok:2},
-    {lv:'B2',tp:'Opción múltiple',tx:'¿Qué significa <span class="ca">"No m\'agrada gens"</span>?',op:['No me gusta la gente','No me gusta mucho','No me gusta nada','No me gusta a veces'],ok:2},
-    {lv:'B2',tp:'Rellena el hueco',tx:'Si hagués estudiat més, <span class="bl">___</span> l\'examen.',op:['hauria aprovat','havia aprovat','aprovo','aprovaré'],ok:0},
+    {lv:'B2',tp:'Opción múltiple',tx:`¿Qué significa <span class="ca">"No m'agrada gens"</span>?`,op:['No me gusta la gente','No me gusta mucho','No me gusta nada','No me gusta a veces'],ok:2},
+    {lv:'B2',tp:'Rellena el hueco',tx:`Si hagués estudiat més, <span class="bl">___</span> l'examen.`,op:['hauria aprovat','havia aprovat','aprovo','aprovaré'],ok:0},
 
     // ─── C1 (21-25) ─────────────────────────────
     {lv:'C1',tp:'Elige la palabra correcta',tx:'No ho he fet jo, <span class="bl">___</span> el meu germà.',op:['si no','sinó','sino','si bé'],ok:1},
@@ -372,7 +372,8 @@
   function clearErr(){ $('cwb-form-err').classList.remove('show'); }
   function mark(id,bad){ $(id).classList[bad?'add':'remove']('cwb-invalid'); }
 
-  function validEmail(v){ return /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v); }
+  // Written without backslashes: WordPress can strip them when saving the block.
+  function validEmail(v){ return /^[^ @]+@[^ @]+[.][^ @]{2,}$/.test(v); }
 
   window.cwbStart = function(){
     clearErr();
@@ -402,7 +403,7 @@
     $('cwb-p-label').textContent = 'Pregunta '+(i+1)+' de '+Q.length;
     var lvEl = $('cwb-p-level');
     lvEl.textContent = q.lv;
-    lvEl.className = 'level-pill pill-'+q.lv.toLowerCase().replace(/\s/g,'');
+    lvEl.className = 'level-pill pill-'+q.lv.toLowerCase();
     $('cwb-q-type').textContent = q.tp;
     $('cwb-q-text').innerHTML = q.tx;
     var wrap = $('cwb-q-opts');
@@ -460,8 +461,8 @@
   /* Convierte HTML de una pregunta/opción en texto plano legible */
   function plain(html){
     var d = document.createElement('div');
-    d.innerHTML = String(html).replace(/<span class="bl">___<\/span>/g, '____');
-    return (d.textContent || '').replace(/\s+/g, ' ').trim();
+    d.innerHTML = String(html);
+    return (d.textContent || '').trim();
   }
 
   /* Detalle de cada respuesta (para ver qué eligió la persona en cada pregunta) */
@@ -510,7 +511,7 @@
       answers:   buildDetail(),
       page_url:  window.location.href
     };
-    fetch(SUPABASE_URL.replace(/\/$/,'') + '/rest/v1/leads', {
+    fetch(SUPABASE_URL + '/rest/v1/leads', {
       method:'POST',
       headers:{
         'Content-Type':'application/json',
