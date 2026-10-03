@@ -244,7 +244,7 @@
         <input type="checkbox" id="cwb-u-consent">
         <label for="cwb-u-consent">Acepto que CatalanWithBet guarde mis datos para contactarme sobre las clases. Ver la <a href="https://www.catalanwithbet.com/privacitat/" target="_blank" rel="noopener">política de privacidad</a>.</label>
       </div>
-      <button class="btn-primary" id="cwb-start-btn" onclick="cwbStart()">Empezar la prueba →</button>
+      <button type="button" class="btn-primary" id="cwb-start-btn">Empezar la prueba →</button>
     </div>
   </div>
 </div>
@@ -262,8 +262,8 @@
     <div class="q-type" id="cwb-q-type"></div>
     <div class="q-text" id="cwb-q-text"></div>
     <div class="options" id="cwb-q-opts"></div>
-    <button class="btn-next" id="cwb-btn-next" onclick="cwbNext()">Siguiente pregunta →</button>
-    <button class="btn-back" id="cwb-btn-back" onclick="cwbPrev()" style="display:none">← Pregunta anterior</button>
+    <button type="button" class="btn-next" id="cwb-btn-next">Siguiente pregunta →</button>
+    <button type="button" class="btn-back" id="cwb-btn-back" style="display:none">← Pregunta anterior</button>
   </div>
 </div>
 
@@ -290,6 +290,9 @@
 
 <script>
 (function(){
+  // Work only inside this block, so another copy of the test on the same
+  // page (e.g. an old block left behind) can't steal its inputs or buttons.
+  var root = document.currentScript.parentNode;
   /* ══════════════════════════════════════════════
      CONFIG · RELLENA ESTOS 2 VALORES DE SUPABASE
      ══════════════════════════════════════════════ */
@@ -360,12 +363,12 @@
   var user = { name:'', email:'' };
   var saved = false;
 
-  function $(id){ return document.getElementById(id); }
+  function $(id){ return root.querySelector('#'+id); }
   function show(id){
-    var scr = document.querySelectorAll('#cwb-test-app .screen');
+    var scr = root.querySelectorAll('.screen');
     for (var i=0;i<scr.length;i++) scr[i].classList.remove('active');
     $(id).classList.add('active');
-    $('cwb-test-app').scrollIntoView({behavior:'smooth',block:'start'});
+    root.scrollIntoView({behavior:'smooth',block:'start'});
   }
 
   function showErr(msg){ var e=$('cwb-form-err'); e.textContent=msg; e.classList.add('show'); }
@@ -375,7 +378,7 @@
   // Written without backslashes: WordPress can strip them when saving the block.
   function validEmail(v){ return /^[^ @]+@[^ @]+[.][^ @]{2,}$/.test(v); }
 
-  window.cwbStart = function(){
+  function start(){
     clearErr();
     var name  = $('cwb-u-name').value.trim();
     var email = $('cwb-u-email').value.trim();
@@ -393,7 +396,7 @@
     user = { name:name, email:email };
     show('cwb-s-test');
     loadQ(0);
-  };
+  }
 
   function loadQ(i){
     cur = i;
@@ -423,17 +426,21 @@
 
   function pick(idx){
     answers[cur] = idx;
-    var opts = document.querySelectorAll('#cwb-test-app .opt');
+    var opts = root.querySelectorAll('.opt');
     for (var i=0;i<opts.length;i++) opts[i].classList.remove('selected');
     opts[idx].classList.add('selected');
     $('cwb-btn-next').classList.add('on');
   }
 
-  window.cwbNext = function(){
+  function next(){
     if (answers[cur]===null) return;
     if (cur < Q.length-1) loadQ(cur+1); else showResults();
-  };
-  window.cwbPrev = function(){ if (cur>0) loadQ(cur-1); };
+  }
+  function prev(){ if (cur>0) loadQ(cur-1); }
+
+  $('cwb-start-btn').addEventListener('click', start);
+  $('cwb-btn-next').addEventListener('click', next);
+  $('cwb-btn-back').addEventListener('click', prev);
 
   // Level is decided block by block, not by raw total score: a student must
   // clear the pass threshold for their own level's questions (and every
